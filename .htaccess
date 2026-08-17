@@ -1,0 +1,5 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/dpsvvwrwj2pe/sqltest"
+PassengerBaseURI "/"
+PassengerRuby "/home/dpsvvwrwj2pe/rubyvenv/sqltest/2.6/bin/ruby"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
