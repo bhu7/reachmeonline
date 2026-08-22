@@ -1,18 +1,34 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>RMO Softech | ReachMeOnline – Best Website Development & IT Services Company in India</title>
-  <meta name="description" content="RMO Softech (ReachMeOnline) – Leading IT company in India offering Website Development, App UI/UX Design, Logo & Poster Design, Hosting, Domain Setup and WhatsApp Integration.">
-  
-   <!-- ✅ Robots Meta (for Google, Bing, etc.) -->
-  <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RMO Softech | Web Development, Software & Digital Solutions</title>
+<meta name="description" content="RMO Softech builds professional websites, business software, e-commerce platforms, UI/UX designs and digital solutions for growing businesses.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://reachmeonline.co.in/">
+<meta name="theme-color" content="#07182c">
+<meta name="author" content="RMO Softech">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="https://reachmeonline.co.in/assets/favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="RMO Softech | Digital Solutions That Move Business Forward">
+<meta property="og:description" content="Professional websites, business software, e-commerce and digital solutions by RMO Softech.">
+<meta property="og:url" content="https://reachmeonline.co.in/">
+<meta property="og:site_name" content="RMO Softech">
+<meta property="og:image" content="https://reachmeonline.co.in/assets/og-image.jpg">
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RMO Softech | Digital Solutions">
+<meta name="twitter:description" content="Websites, software, e-commerce, UI/UX and digital solutions.">
+<meta name="twitter:image" content="https://reachmeonline.co.in/assets/og-image.jpg">
 
-  
-  <!-- Google tag (gtag.js) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HRB46693VT"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -21,304 +37,252 @@
 
   gtag('config', 'G-HRB46693VT');
 </script>
-  <meta name="keywords" content="RMO Softech, ReachMeOnline, website development, UI/UX design, hosting, logo design, Bhushan Bisen, digital branding, responsive website design, IT company India">
-  <link rel="canonical" href="https://reachmeonline.co.in/">
-  <meta name="theme-color" content="#2563eb">
-  <meta property="og:title" content="RMO Softech | ReachMeOnline – Reliable IT Solutions in India">
-  <meta property="og:description" content="Website Development, UI/UX Design, Hosting, Domain & E-Commerce Solutions.">
-  <meta property="og:image" content="https://reachmeonline.co.in/assets/logo.png">
-  <meta property="og:url" content="https://reachmeonline.co.in">
-  <meta property="og:type" content="website">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://reachmeonline.co.in/assets/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "@id":"https://reachmeonline.co.in/#organization",
+  "name":"RMO Softech",
+  "url":"https://reachmeonline.co.in/",
+  "logo":"https://reachmeonline.co.in/assets/rmo-logo.svg",
+  "description":"RMO Softech provides website development, business software, UI/UX design, e-commerce, hosting and digital solutions for growing businesses.",
+  "email":"pawanbisen123@gmail.com",
+  "telephone":"+91-96734-36830",
+  "contactPoint":{"@type":"ContactPoint","telephone":"+91-96734-36830","contactType":"sales","email":"pawanbisen123@gmail.com","availableLanguage":["English","Hindi"]}
+}
 
 
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <div class="logo"><img src="assets/logo.png" alt="RMO Softech Logo"></div>
-      </div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <nav>
-          <a href="#">Index</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-          <a class="btn outline" href="https://wa.me/919673436830" target="_blank">Get Enquiry</a>
-        </nav>
-        <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
-      </div>
-    </div>
-  </header>
-<section class="hero-section">
-  <video autoplay muted loop playsinline class="background-video">
-    <source src="assets/banvid.mp4" type="video/mp4">
-  </video>
 
-  <div class="overlay"></div>
+/* ===== OFFICIAL SOCIAL PROFILE CONFIGURATION =====
+   Paste your real profile URLs here when ready. */
+const RMO_SOCIALS={
+  facebook:"",
+  instagram:"",
+  linkedin:""
+};
+Object.entries(RMO_SOCIALS).forEach(([name,url])=>{
+  const el=document.querySelector(`[data-social="${name}"]`);
+  if(!el) return;
+  if(url){
+    el.href=url;
+    el.target="_blank";
+    el.rel="noopener noreferrer";
+    el.classList.remove('is-disabled');
+    el.removeAttribute('title');
+  }else{
+    el.addEventListener('click',e=>e.preventDefault());
+  }
+});
 
-  <div class="hero-content">
-    <h1>
-      <span id="typed-text"></span><span class="cursor">|</span>
-    </h1>
-    <p>Branding • Hosting • E-Commerce • WhatsApp</p>
-    <a href="#services" class="explore-btn">Explore Services</a>
-  </div>
-</section>
+</script>
 
-
-  <section id="about" class="section about reveal">
-    <div class="container about-grid">
-      <div class="about-text">
-        <h2>About RMO Softech</h2>
-        <p>RMO Softech (ReachMeOnline) is your trusted IT partner, delivering reliable and creative digital solutions. We specialize in professional website design, app UI/UX, and online brand identity.</p>
-        <ul style="color:var(--muted);margin-top:10px;">
-          <li>✅ Reliable, SEO-friendly websites</li>
-          <li>✅ Creative & responsive designs</li>
-          <li>✅ Long-term support & hosting setup</li>
-        </ul>
-      </div>
-      <div><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1000" alt="Workspace laptop setup"></div>
-    </div>
-  </section>
-  <section id="why" class="section why reveal">
-    <div class="container why-grid">
-      <div class="why-image">
-        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?w=1000" alt="Why Choose RMO Softech">
-      </div>
-      <div class="why-text">
-        <h2>Why Choose RMO Softech?</h2>
-        <p>We’re not just another IT company — we’re your long-term digital growth partner. At RMO Softech, we combine creativity, technology, and business understanding to deliver exceptional results that help your brand grow online with confidence.</p>
-        <ul>
-          <li>🚀 <strong>Experienced Team:</strong> Skilled developers & designers focused on quality.</li>
-          <li>🧩 <strong>Customized Solutions:</strong> We build what fits your business goals.</li>
-          <li>⚡ <strong>Fast Delivery:</strong> On-time project completion with transparent communication.</li>
-          <li>💬 <strong>Support Always On:</strong> WhatsApp & call assistance even after project delivery.</li>
-        </ul>
-        <a href="https://wa.me/919673436830" target="_blank" class="btn" style="margin-top:20px;">Let's Talk 💬</a>
-      </div>
-    </div>
-  </section>
-  <section id="services" class="section reveal">
-    <div class="container">
-      <h2>Our IT Services</h2>
-      <p class="lead">We offer a wide range of digital services that empower your business to grow and scale confidently.</p>
-      <div class="services-grid">
-        <div class="service-card"><div class="service-icon">🌐</div><h3>Website Development</h3><p>Responsive, fast, and SEO-friendly websites.</p></div>
-        <div class="service-card"><div class="service-icon">📱</div><h3>App UI/UX Design</h3><p>Beautiful and functional user experiences.</p></div>
-        <div class="service-card"><div class="service-icon">🎨</div><h3>Logo & Poster Design</h3><p>Creative branding for your business.</p></div>
-        <div class="service-card"><div class="service-icon">💻</div><h3>HTML/CSS Fix</h3><p>Optimize and redesign your existing site.</p></div>
-        <div class="service-card"><div class="service-icon">🛒</div><h3>E-Commerce</h3><p>Secure online stores with payments.</p></div>
-        <div class="service-card"><div class="service-icon">☁️</div><h3>Hosting & Domain</h3><p>End-to-end hosting and domain setup.</p></div>
-        <div class="service-card"><div class="service-icon">💬</div><h3>WhatsApp Integration</h3><p>Instant chat and enquiry solutions.</p></div>
-      </div>
-    </div>
-  </section>
-  <section class="cta reveal" id="contact">
-    <div>
-      <h3>Ready to Discuss Your Project?</h3>
-      <p>📞 <a href="tel:+919673436830">9673436830</a><br>
-      ✉️ <a href="mailto:pawanbisen123@gmail.com">pawanbisen123@gmail.com</a><br>
-      💬 <a href="https://wa.me/919673436830" target="_blank">Chat on WhatsApp</a></p>
-    </div>
-    <div class="cta-btns">
-      <a class="btn" href="mailto:pawanbisen123@gmail.com">Email Us</a>
-      <a class="btn outline" href="https://wa.me/919673436830" target="_blank">WhatsApp</a>
-    </div>
-  </section>
-  
-
-<!-- ===== Modern Social Media Section ===== -->
-<!-- ===== Floating Social Media Icons Section ===== -->
-<section class="social-floating reveal">
-  <div class="social-container">
-    <h3 class="social-heading">Follow Us</h3>
-    <div class="social-buttons">
-      <a href="https://www.facebook.com/reachmeonline" target="_blank" class="social-btn facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="#" target="_blank" class="social-btn instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="#" target="_blank" class="social-btn linkedin">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-  </div>
-</section>
 <style>
-    /* ===== Apple-style Floating Social Icons ===== */
-.social-floating {
-  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-  padding: 80px 0;
-  text-align: center;
-  position: relative;
-}
+:root{--navy:#07182c;--navy2:#0b2545;--blue:#2563eb;--cyan:#06b6d4;--orange:#fa6400;--ink:#102033;--muted:#66758a;--line:#e7edf4;--soft:#f5f8fc;--white:#fff;--shadow:0 24px 70px rgba(8,24,44,.10)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit} button{font:inherit}
+.container{width:min(1180px,calc(100% - 36px));margin:auto}
+.section{padding:105px 0}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--blue);font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.eyebrow:before{content:"";width:25px;height:2px;background:currentColor}
+.h2{margin-top:14px;font-family:Poppins,sans-serif;font-size:43px;line-height:1.15;letter-spacing:-1.3px;color:var(--navy)}
+.lead{margin-top:16px;color:var(--muted);font-size:14px;line-height:1.85;max-width:650px}
 
-[data-theme="dark"] .social-floating {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-}
+.nav{position:fixed;inset:0 0 auto;height:76px;z-index:50;transition:.3s}
+.nav.scrolled{background:rgba(255,255,255,.94);backdrop-filter:blur(18px);box-shadow:0 8px 28px rgba(15,23,42,.07)}
+.navin{height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{width:132px;color:#fff}.nav.scrolled .logo{color:var(--navy)}.logo svg{display:block;width:100%;height:auto}
+.links{display:flex;gap:28px;align-items:center}.links a{font-size:11px;font-weight:600;color:#fff;transition:.2s}.nav.scrolled .links a{color:var(--ink)}.links a:hover{color:var(--blue)!important}
+.navcta{padding:10px 17px;border-radius:8px;background:var(--orange);color:#fff!important}
+.menu{display:none;border:0;width:40px;height:40px;border-radius:9px;background:#fff;color:var(--navy)}
 
-.social-heading {
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--brand-ink);
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+.hero{position:relative;min-height:820px;display:flex;align-items:center;overflow:hidden;background:radial-gradient(circle at 80% 25%,rgba(37,99,235,.25),transparent 28%),linear-gradient(120deg,#061327,#0b2545 65%,#06152d)}
+.gridbg{position:absolute;inset:0;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:64px 64px}
+.orb{position:absolute;border-radius:50%;filter:blur(5px);pointer-events:none}.o1{width:480px;height:480px;right:-180px;top:-160px;background:radial-gradient(circle,rgba(6,182,212,.22),transparent 68%)}.o2{width:400px;height:400px;left:-200px;bottom:-200px;background:radial-gradient(circle,rgba(37,99,235,.18),transparent 68%)}
+.heroGrid{position:relative;z-index:2;display:grid;grid-template-columns:1.02fr .98fr;gap:55px;align-items:center;padding-top:70px}
+.hero h1{margin-top:22px;color:#fff;font-family:Poppins,sans-serif;font-size:64px;line-height:1.06;letter-spacing:-2.8px;max-width:720px}.hero h1 span{color:#5ee7ff}
+.hero p{margin-top:22px;color:#b9c8dc;font-size:15px;line-height:1.85;max-width:640px}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);border-radius:30px;color:#dbeafe;font-size:10px;font-weight:700}
+.dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 5px rgba(34,197,94,.1)}
+.actions{display:flex;gap:10px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 19px;border-radius:8px;font-size:10px;font-weight:800;transition:.25s}
+.primary{background:var(--orange);color:#fff;box-shadow:0 12px 30px rgba(250,100,0,.22)}.primary:hover{transform:translateY(-2px)}
+.ghost{color:#fff;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04)}.ghost:hover{background:#fff;color:var(--navy)}
+.stats{display:flex;gap:36px;margin-top:46px}.stat strong{display:block;color:#fff;font:700 23px Poppins,sans-serif}.stat span{font-size:9px;color:#8093ad}
 
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
+.heroArt{position:relative;min-height:500px;display:flex;align-items:center;justify-content:center}.heroArt svg{width:100%;max-width:590px;overflow:visible}
+.float{position:absolute;padding:10px 13px;border:1px solid rgba(255,255,255,.13);background:rgba(7,20,43,.82);backdrop-filter:blur(12px);border-radius:9px;color:#fff;font-size:9px;box-shadow:0 18px 40px rgba(0,0,0,.2)}.float i{color:#5ee7ff;margin-right:6px}.f1{right:-8px;top:80px}.f2{left:0;bottom:70px}
 
-.social-btn {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-  color: #2563eb;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15),
-              inset 0 2px 4px rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease;
-}
+.trust{padding:22px 0;border-bottom:1px solid var(--line)}.trustin{display:flex;justify-content:space-between;align-items:center;gap:20px}.trustlabel{font-size:9px;color:#9aa7b7;font-weight:700}.trustlist{display:flex;gap:30px;flex-wrap:wrap}.trustlist span{font-size:10px;font-weight:700;color:#526174}
 
-.social-btn:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25),
-              inset 0 2px 6px rgba(255, 255, 255, 0.9);
-}
+.about{display:grid;grid-template-columns:.95fr 1.05fr;gap:85px;align-items:center}.aboutArt svg{width:100%;max-width:540px}
+.checks{display:grid;gap:10px;margin-top:26px}.check{display:flex;align-items:center;gap:10px;font-size:10px;color:#34445a}.check i{width:23px;height:23px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#ecfdf3;color:#16a34a;font-size:9px}
 
-/* Brand color effects */
-.social-btn.facebook:hover {
-  color: #1877f2;
-}
+.soft{background:var(--soft)}.servicesHead{margin-bottom:42px}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.service{position:relative;min-height:235px;padding:25px;border:1px solid var(--line);border-radius:14px;background:#fff;transition:.3s;overflow:hidden}.service:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#c9d8f2}
+.serviceNo{position:absolute;right:18px;top:14px;color:#edf2f7;font:800 35px Poppins,sans-serif}.serviceIcon{width:46px;height:46px;border-radius:10px;background:#eff6ff;color:var(--blue);display:flex;align-items:center;justify-content:center}.service h3{margin-top:20px;font:600 14px Poppins,sans-serif;color:var(--navy)}.service p{margin-top:7px;font-size:10px;color:var(--muted);line-height:1.75}.service a{position:absolute;left:25px;bottom:20px;color:var(--blue);font-size:9px;font-weight:800}
 
-.social-btn.instagram:hover {
-  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-  color: white;
-}
+.dark{background:linear-gradient(120deg,#061327,#0b2545);color:#fff}.dark .h2{color:#fff}.dark .lead{color:#9eb0c7}
+.techgrid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}.pill{padding:9px 12px;border:1px solid rgba(255,255,255,.1);border-radius:7px;background:rgba(255,255,255,.04);font-size:9px;color:#cbd5e1}.techsvg{width:100%;max-width:560px}
 
-.social-btn.linkedin:hover {
-  color: #0077b5;
-}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:42px}.step{padding:25px;border:1px solid var(--line);border-radius:12px;background:#fff}.stepNo{color:#dbeafe;font:800 30px Poppins,sans-serif}.step h3{margin-top:16px;font:600 13px Poppins,sans-serif;color:var(--navy)}.step p{margin-top:7px;font-size:9px;color:var(--muted);line-height:1.75}
 
-/* Responsive */
-@media (max-width: 768px) {
-  .social-btn {
-    width: 55px;
-    height: 55px;
-    font-size: 22px;
-  }
-  .social-heading {
-    font-size: 24px;
-  }
-}
+.cta{padding:85px 0}.ctabox{position:relative;overflow:hidden;padding:60px;border-radius:20px;background:linear-gradient(120deg,#07182c,#1747a0)}.ctabox:after{content:"";position:absolute;width:340px;height:340px;right:-130px;top:-170px;border-radius:50%;background:rgba(6,182,212,.22)}.ctain{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font:600 36px/1.2 Poppins,sans-serif;color:#fff}.cta p{margin-top:8px;color:#bcd1ed;font-size:11px}.ctaBtns{display:flex;gap:10px}
 
-/* ===== Scroll Animation (Bottom to Top Fade) ===== */
-.reveal {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: opacity 0.8s ease-out, transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-}
+.footer{background:#040d1b;color:#fff;padding:60px 0 24px}.footerGrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:45px}.footerLogo{width:135px;color:#fff}.footerLogo svg{width:100%}.footerText{margin-top:14px;max-width:300px;color:#7f92ab;font-size:9px;line-height:1.8}.footer h4{font:600 11px Poppins,sans-serif;margin-bottom:14px}.footerLinks{display:grid;gap:9px}.footerLinks a{font-size:9px;color:#7f92ab}.footerLinks a:hover{color:#fff}.footerBottom{margin-top:42px;padding-top:20px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;color:#52647f;font-size:8px}
 
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
+.wa{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#16a34a;color:#fff;font-size:20px;z-index:40;box-shadow:0 12px 30px rgba(22,163,74,.3)}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
 
+@media(max-width:950px){
+.links{display:none}.menu{display:flex;align-items:center;justify-content:center}.heroGrid{grid-template-columns:1fr}.heroArt{display:none}.about,.techgrid{grid-template-columns:1fr;gap:50px}.services{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}.footerGrid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+.container{width:calc(100% - 28px)}.section{padding:74px 0}.nav{height:68px}.logo{width:110px}.hero{min-height:740px}.heroGrid{padding-top:55px}.hero h1{font-size:39px;letter-spacing:-1.5px}.hero p{font-size:12px}.actions{flex-direction:column}.btn{width:100%}.stats{gap:20px;flex-wrap:wrap}.h2{font-size:30px}.trustin{align-items:flex-start;flex-direction:column}.trustlist{gap:15px}.services{grid-template-columns:1fr}.process{grid-template-columns:1fr}.cta{padding:55px 0}.ctabox{padding:35px 22px}.ctain{align-items:flex-start;flex-direction:column}.cta h2{font-size:27px}.ctaBtns{width:100%;flex-direction:column}.footerGrid{grid-template-columns:1fr 1fr}.footerBottom{flex-direction:column;gap:7px}
+}
+@media(max-width:380px){.footerGrid{grid-template-columns:1fr}}
+
+/* ===== RMO BRAND LOGO / SOCIAL UX OVERRIDES ===== */
+.logo{color:#fff;display:block;line-height:0}
+.nav.scrolled .logo{color:#14232f}
+.footerLogo{color:#fff;display:block;line-height:0}
+.logo svg,.footerLogo svg{display:block;width:100%;height:auto}
+
+.footerContact{display:grid;gap:10px;margin-top:16px}
+.footerContact a{display:inline-flex;align-items:center;gap:9px;color:#9aabc0;font-size:9px;transition:.2s}
+.footerContact a:hover{color:#fff}
+.footerContact i{width:14px;text-align:center;color:#ff7a1a}
+
+.socials{display:flex;gap:9px;margin-top:18px;flex-wrap:wrap}
+.social{width:34px;height:34px;border:1px solid rgba(255,255,255,.10);border-radius:9px;display:flex;align-items:center;justify-content:center;color:#aab9cb;background:rgba(255,255,255,.035);font-size:12px;transition:.2s}
+.social:hover{transform:translateY(-2px);background:#fff;color:#07182c;border-color:#fff}
+.social.is-disabled{opacity:.55;cursor:not-allowed}
+.social.is-disabled:hover{transform:none;background:rgba(255,255,255,.035);color:#aab9cb;border-color:rgba(255,255,255,.10)}
+.social-note{margin-top:8px;color:#53657c;font-size:7.5px;line-height:1.5}
+
+.legalLine{margin-top:10px;color:#71839a;font-size:8px;line-height:1.7}
+.legalLine strong{color:#9aabc0;font-weight:600}
+
+.emailHighlight{color:#cbd8e8!important}
+.emailHighlight i{color:#60a5fa!important}
+
+@media(max-width:600px){
+  .footerContact a{font-size:9px}
+  .social{width:36px;height:36px}
+  .legalLine{font-size:7.5px}
+}
 
 </style>
+</head>
 
+<body>
+<header class="nav" id="nav"><div class="container navin">
+<a href="#home" class="logo" aria-label="RMO Softech home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 905"><path d="M 1415,663 L 1415,733 L 1436,733 L 1437,706 L 1477,706 L 1478,733 L 1500,733 L 1500,663 L 1478,663 L 1477,688 L 1437,688 L 1436,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1200,678 L 1194,692 L 1195,708 L 1202,720 L 1212,728 L 1226,733 L 1272,733 L 1285,716 L 1228,715 L 1224,713 L 1215,702 L 1215,695 L 1224,684 L 1236,681 L 1272,681 L 1285,663 L 1224,664 L 1209,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 985,663 L 985,733 L 1053,733 L 1066,715 L 1008,715 L 1007,707 L 1050,706 L 1062,690 L 1008,690 L 1007,682 L 1053,681 L 1066,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 777,663 L 763,681 L 795,681 L 796,733 L 817,733 L 817,682 L 843,681 L 856,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 561,733 L 583,733 L 584,708 L 622,708 L 636,691 L 584,691 L 584,681 L 626,681 L 640,663 L 562,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 107,672 L 104,678 L 104,691 L 107,697 L 112,701 L 124,705 L 171,705 L 175,707 L 176,711 L 173,715 L 115,715 L 102,733 L 177,733 L 186,730 L 194,723 L 197,714 L 197,707 L 195,701 L 185,693 L 177,691 L 128,691 L 125,689 L 125,684 L 132,681 L 181,681 L 194,663 L 130,663 L 118,665 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 329,681 L 326,693 L 326,703 L 329,715 L 337,725 L 355,733 L 383,735 L 409,730 L 416,726 L 424,718 L 427,711 L 429,696 L 424,679 L 414,669 L 401,664 L 389,662 L 365,662 L 353,664 L 339,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 349,688 L 356,682 L 365,680 L 389,680 L 398,682 L 406,690 L 406,707 L 401,713 L 392,716 L 372,717 L 358,715 L 349,708 L 347,702 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 112,392 L 384,393 L 405,397 L 417,404 L 426,415 L 428,422 L 428,435 L 423,445 L 410,456 L 397,461 L 385,463 L 111,463 L 111,618 L 205,618 L 206,538 L 350,538 L 418,618 L 543,618 L 499,570 L 458,529 L 446,520 L 448,518 L 453,518 L 472,511 L 492,498 L 502,488 L 516,466 L 524,440 L 524,405 L 516,379 L 504,360 L 489,346 L 477,338 L 451,326 L 434,321 L 384,314 L 173,314 Z" fill="#FA6400" fill-rule="evenodd"/><path d="M 1142,385 L 1132,406 L 1127,423 L 1123,452 L 1125,499 L 1132,526 L 1145,552 L 1154,564 L 1168,578 L 1193,595 L 1230,610 L 1272,619 L 1316,623 L 1394,622 L 1431,617 L 1453,612 L 1487,600 L 1519,581 L 1542,557 L 1551,543 L 1561,519 L 1566,497 L 1568,455 L 1566,435 L 1561,413 L 1551,389 L 1538,370 L 1522,354 L 1500,339 L 1465,324 L 1422,314 L 1367,309 L 1307,310 L 1258,316 L 1217,327 L 1187,341 L 1164,358 L 1151,372 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1222,428 L 1229,416 L 1238,407 L 1257,397 L 1276,392 L 1321,388 L 1370,388 L 1401,390 L 1427,395 L 1441,400 L 1455,409 L 1461,415 L 1468,427 L 1473,443 L 1474,479 L 1472,493 L 1468,506 L 1461,517 L 1454,524 L 1438,534 L 1422,539 L 1380,544 L 1311,544 L 1269,539 L 1253,534 L 1240,527 L 1229,516 L 1222,504 L 1217,485 L 1217,447 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 556,618 L 649,617 L 683,491 L 695,442 L 695,436 L 698,431 L 777,583 L 792,607 L 804,617 L 815,622 L 848,623 L 863,619 L 878,607 L 891,587 L 941,493 L 972,430 L 984,480 L 1022,618 L 1116,618 L 1036,342 L 1026,326 L 1018,319 L 1005,312 L 992,309 L 979,309 L 961,314 L 949,322 L 937,336 L 859,474 L 837,517 L 835,516 L 825,494 L 792,434 L 731,329 L 722,320 L 714,315 L 694,309 L 676,310 L 658,317 L 646,328 L 636,345 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1452,171 L 1431,188 L 1395,226 L 1371,260 L 1354,292 L 1354,296 L 1376,282 L 1399,273 L 1423,268 L 1444,267 L 1475,271 L 1492,276 L 1511,284 L 1534,299 L 1562,328 L 1578,353 L 1584,368 L 1590,393 L 1592,415 L 1588,455 L 1582,470 L 1582,474 L 1592,467 L 1614,443 L 1629,418 L 1635,403 L 1641,380 L 1643,362 L 1642,336 L 1637,317 L 1638,313 L 1664,341 L 1678,361 L 1692,387 L 1700,407 L 1705,426 L 1711,465 L 1709,511 L 1707,515 L 1705,532 L 1694,564 L 1711,552 L 1737,525 L 1737,523 L 1747,512 L 1765,481 L 1780,440 L 1786,406 L 1786,389 L 1788,388 L 1802,413 L 1816,447 L 1827,491 L 1830,519 L 1831,558 L 1829,562 L 1828,585 L 1825,602 L 1821,613 L 1821,619 L 1809,655 L 1812,655 L 1837,634 L 1855,616 L 1877,588 L 1892,565 L 1914,519 L 1926,477 L 1928,457 L 1930,453 L 1931,383 L 1922,335 L 1914,310 L 1902,282 L 1872,233 L 1849,206 L 1823,182 L 1801,165 L 1779,151 L 1730,129 L 1699,120 L 1671,115 L 1647,113 L 1608,113 L 1573,118 L 1543,125 L 1520,133 L 1490,147 Z" fill="#FA6400" fill-rule="evenodd"/></svg></a>
+<nav class="links" aria-label="Primary navigation"><a href="#about">About</a><a href="#services">Services</a><a href="#technology">Technology</a><a href="#process">Process</a><a href="#contact" class="navcta">Let's Talk</a></nav>
+<button class="menu" id="menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+</div></header>
 
+<main id="home">
+<section class="hero"><div class="gridbg"></div><div class="orb o1"></div><div class="orb o2"></div>
+<div class="container heroGrid">
+<div class="reveal">
+<div class="badge"><span class="dot"></span> Digital solutions for growing businesses</div>
+<h1>We build digital products that <span>move businesses forward.</span></h1>
+<p>RMO Softech creates professional websites, business software, e-commerce platforms and digital experiences designed around real business goals.</p>
+<div class="actions"><a href="#services" class="btn primary">Explore Services <i class="fa-solid fa-arrow-right"></i></a><a href="#contact" class="btn ghost">Start a Project</a></div>
+<div class="stats"><div class="stat"><strong>10+</strong><span>Years Experience</span></div><div class="stat"><strong>100+</strong><span>Projects Delivered</span></div><div class="stat"><strong>24/7</strong><span>Support</span></div></div>
+</div>
+<div class="heroArt reveal">
+<svg viewBox="0 0 650 520" role="img" aria-label="Abstract software dashboard illustration">
+<defs><linearGradient id="hg" x1="0" x2="1"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/></linearGradient><linearGradient id="hf" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2563eb" stop-opacity=".35"/><stop offset="1" stop-color="#2563eb" stop-opacity="0"/></linearGradient></defs>
+<circle cx="500" cy="100" r="120" fill="#2563eb" opacity=".10"/><rect x="75" y="65" width="500" height="360" rx="20" fill="#fff" fill-opacity=".06" stroke="#fff" stroke-opacity=".15"/><rect x="75" y="65" width="500" height="48" rx="20" fill="#fff" fill-opacity=".05"/>
+<circle cx="100" cy="88" r="5" fill="#94a3b8"/><circle cx="116" cy="88" r="5" fill="#64748b"/><circle cx="132" cy="88" r="5" fill="#475569"/><rect x="160" y="80" width="250" height="16" rx="8" fill="#fff" fill-opacity=".05"/>
+<rect x="95" y="135" width="85" height="255" rx="10" fill="#fff" fill-opacity=".035"/><rect x="110" y="160" width="48" height="7" rx="3" fill="#60a5fa"/><rect x="110" y="190" width="42" height="6" rx="3" fill="#64748b"/><rect x="110" y="215" width="35" height="6" rx="3" fill="#64748b"/><rect x="110" y="240" width="45" height="6" rx="3" fill="#64748b"/><rect x="110" y="265" width="38" height="6" rx="3" fill="#64748b"/>
+<rect x="195" y="135" width="105" height="72" rx="10" fill="#fff" fill-opacity=".06"/><rect x="315" y="135" width="105" height="72" rx="10" fill="#fff" fill-opacity=".06"/><rect x="435" y="135" width="105" height="72" rx="10" fill="#fff" fill-opacity=".06"/>
+<text x="212" y="159" fill="#94a3b8" font-size="10" font-family="Inter">Revenue</text><text x="212" y="188" fill="#fff" font-size="20" font-family="Poppins" font-weight="700">84K</text><text x="332" y="159" fill="#94a3b8" font-size="10" font-family="Inter">Users</text><text x="332" y="188" fill="#fff" font-size="20" font-family="Poppins" font-weight="700">2.4K</text><text x="452" y="159" fill="#94a3b8" font-size="10" font-family="Inter">Growth</text><text x="452" y="188" fill="#fff" font-size="20" font-family="Poppins" font-weight="700">28%</text>
+<rect x="195" y="225" width="345" height="165" rx="12" fill="#fff" fill-opacity=".035"/><path d="M210 355 C245 345 260 305 295 325 S355 270 390 300 S455 245 525 270 L525 375 L210 375Z" fill="url(#hf)"/><path d="M210 355 C245 345 260 305 295 325 S355 270 390 300 S455 245 525 270" fill="none" stroke="url(#hg)" stroke-width="4" stroke-linecap="round"/><circle cx="525" cy="270" r="6" fill="#5ee7ff"/>
+</svg>
+<div class="float f1"><i class="fa-solid fa-code"></i> Clean Development</div><div class="float f2"><i class="fa-solid fa-bolt"></i> Fast & Scalable</div>
+</div></div></section>
 
+<section class="trust"><div class="container trustin"><span class="trustlabel">WHAT WE BUILD</span><div class="trustlist"><span>Websites</span><span>Software</span><span>E-Commerce</span><span>UI / UX</span><span>Cloud</span><span>Automation</span></div></div></section>
 
-  <footer>
-    <div class="container">
-      <div><p>© 2025 RMO Softech — UDYAM Registered MSME (Govt. of India)
-      </p></div>
-    </div>
-  </footer>
-  <script src="script.js" defer></script>
-  <script>
-  const textArray = [
-    "Build Your Online Identity",
-    "Design Your Digital Presence",
-    "Grow Your Business With RMO Softech"
-  ];
-  const typingSpeed = 100;
-  const erasingSpeed = 50;
-  const delayBetween = 2000;
-  let textIndex = 0;
-  let charIndex = 0;
+<section class="section" id="about"><div class="container about">
+<div class="aboutArt reveal"><svg viewBox="0 0 600 500" role="img" aria-label="Business software dashboard vector illustration">
+<rect x="55" y="55" width="490" height="380" rx="28" fill="#f1f5f9"/><rect x="90" y="85" width="420" height="300" rx="16" fill="#fff" stroke="#dbe3ef"/><circle cx="112" cy="108" r="5" fill="#cbd5e1"/><circle cx="128" cy="108" r="5" fill="#cbd5e1"/><circle cx="144" cy="108" r="5" fill="#cbd5e1"/>
+<rect x="105" y="135" width="65" height="230" rx="8" fill="#07182c"/><rect x="118" y="157" width="38" height="7" rx="3" fill="#2563eb"/><rect x="118" y="185" width="31" height="6" rx="3" fill="#475569"/><rect x="118" y="208" width="37" height="6" rx="3" fill="#475569"/><rect x="118" y="231" width="27" height="6" rx="3" fill="#475569"/>
+<rect x="190" y="140" width="90" height="70" rx="8" fill="#eff6ff"/><rect x="295" y="140" width="90" height="70" rx="8" fill="#ecfeff"/><rect x="400" y="140" width="90" height="70" rx="8" fill="#fff7ed"/>
+<text x="204" y="164" font-size="9" font-family="Inter" fill="#64748b">Revenue</text><text x="204" y="192" font-size="17" font-family="Poppins" font-weight="700" fill="#0f172a">84K</text><text x="309" y="164" font-size="9" font-family="Inter" fill="#64748b">Users</text><text x="309" y="192" font-size="17" font-family="Poppins" font-weight="700" fill="#0f172a">2.4K</text><text x="414" y="164" font-size="9" font-family="Inter" fill="#64748b">Growth</text><text x="414" y="192" font-size="17" font-family="Poppins" font-weight="700" fill="#0f172a">+28%</text>
+<rect x="190" y="230" width="300" height="110" rx="10" fill="#f8fafc"/><polyline points="205,315 240,296 275,302 310,270 345,283 380,250 420,260 460,235 480,240" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="25" y="330" width="180" height="105" rx="14" fill="#07182c"/><text x="45" y="360" font-family="monospace" font-size="11" fill="#60a5fa">&lt;digital /&gt;</text><text x="45" y="385" font-family="monospace" font-size="9" fill="#94a3b8">build();</text><text x="45" y="405" font-family="monospace" font-size="9" fill="#22d3ee">scale();</text>
+</svg></div>
+<div class="reveal"><div class="eyebrow">About RMO Softech</div><h2 class="h2">Technology should solve problems.</h2><p class="lead">RMO Softech is a digital technology company focused on practical, modern and scalable solutions for businesses that want to grow online.</p><p class="lead">We combine design, development and business understanding to build digital products that are useful, maintainable and ready to scale.</p><div class="checks">
+<div class="check"><i class="fa-solid fa-check"></i> Responsive and performance-focused websites</div><div class="check"><i class="fa-solid fa-check"></i> Clean UI/UX and conversion-focused experiences</div><div class="check"><i class="fa-solid fa-check"></i> Custom business software and dashboards</div><div class="check"><i class="fa-solid fa-check"></i> Long-term deployment and technical support</div>
+</div></div></div></section>
 
-  const typedText = document.getElementById("typed-text");
-  const cursor = document.querySelector(".cursor");
+<section class="section soft" id="services"><div class="container"><div class="servicesHead reveal"><div class="eyebrow">Our Expertise</div><h2 class="h2">Digital services built around your business.</h2><p class="lead">From design and development to deployment and support, we help turn digital ideas into working products.</p></div>
+<div class="services">
+<article class="service reveal"><span class="serviceNo">01</span><div class="serviceIcon"><i class="fa-solid fa-code"></i></div><h3>Website Development</h3><p>Professional, responsive websites engineered for performance, usability and search visibility.</p><a href="#contact">Explore →</a></article>
+<article class="service reveal"><span class="serviceNo">02</span><div class="serviceIcon"><i class="fa-solid fa-mobile-screen-button"></i></div><h3>UI / UX Design</h3><p>Modern interfaces designed around real users, business goals and intuitive experiences.</p><a href="#contact">Explore →</a></article>
+<article class="service reveal"><span class="serviceNo">03</span><div class="serviceIcon"><i class="fa-solid fa-cart-shopping"></i></div><h3>E-Commerce Development</h3><p>Online stores with product management, payments, orders and customer-focused journeys.</p><a href="#contact">Explore →</a></article>
+<article class="service reveal"><span class="serviceNo">04</span><div class="serviceIcon"><i class="fa-solid fa-layer-group"></i></div><h3>Business Software</h3><p>Custom dashboards, management systems and workflows designed around your operations.</p><a href="#contact">Explore →</a></article>
+<article class="service reveal"><span class="serviceNo">05</span><div class="serviceIcon"><i class="fa-solid fa-server"></i></div><h3>Hosting & Deployment</h3><p>Domain, hosting, SSL, deployment and infrastructure support for live business websites.</p><a href="#contact">Explore →</a></article>
+<article class="service reveal"><span class="serviceNo">06</span><div class="serviceIcon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Brand & Digital Design</h3><p>Logos, marketing creatives and digital identity systems designed for consistent branding.</p><a href="#contact">Explore →</a></article>
+</div></div></section>
 
-  function type() {
-    if (charIndex < textArray[textIndex].length) {
-      if (!cursor.classList.contains("typing")) cursor.classList.add("typing");
-      typedText.textContent += textArray[textIndex].charAt(charIndex);
-      charIndex++;
-      setTimeout(type, typingSpeed);
-    } else {
-      cursor.classList.remove("typing");
-      setTimeout(erase, delayBetween);
-    }
-  }
+<section class="section dark" id="technology"><div class="container techgrid">
+<div class="reveal"><div class="eyebrow" style="color:#60a5fa">Technology</div><h2 class="h2">Modern technology. Built with purpose.</h2><p class="lead">We choose technology according to the business problem, project scale and long-term maintenance needs.</p><div class="pills"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">Bootstrap</span><span class="pill">PHP</span><span class="pill">Laravel</span><span class="pill">Firebase</span><span class="pill">MySQL</span><span class="pill">REST API</span><span class="pill">Cloudflare</span></div></div>
+<div class="reveal"><svg class="techsvg" viewBox="0 0 600 500" role="img" aria-label="RMO technology network vector"><g stroke="#2563eb" stroke-opacity=".4" stroke-width="2"><line x1="300" y1="250" x2="120" y2="120"/><line x1="300" y1="250" x2="480" y2="120"/><line x1="300" y1="250" x2="110" y2="380"/><line x1="300" y1="250" x2="490" y2="380"/><line x1="300" y1="250" x2="300" y2="80"/></g><circle cx="300" cy="250" r="66" fill="#102b59" stroke="#60a5fa" stroke-width="2"/><circle cx="300" cy="250" r="46" fill="#07182c"/><text x="300" y="246" text-anchor="middle" font-family="Poppins" font-size="16" font-weight="700" fill="#fff">RMO</text><text x="300" y="266" text-anchor="middle" font-family="Inter" font-size="8" fill="#60a5fa">DIGITAL CORE</text><g fill="#0d2349" stroke="#2563eb"><circle cx="120" cy="120" r="42"/><circle cx="480" cy="120" r="42"/><circle cx="110" cy="380" r="42"/><circle cx="490" cy="380" r="42"/><circle cx="300" cy="80" r="35"/></g><text x="120" y="124" text-anchor="middle" font-family="Inter" font-size="10" fill="#fff">WEB</text><text x="480" y="124" text-anchor="middle" font-family="Inter" font-size="10" fill="#fff">APP</text><text x="110" y="384" text-anchor="middle" font-family="Inter" font-size="10" fill="#fff">CLOUD</text><text x="490" y="384" text-anchor="middle" font-family="Inter" font-size="10" fill="#fff">DATA</text><text x="300" y="84" text-anchor="middle" font-family="Inter" font-size="9" fill="#fff">API</text></svg></div>
+</div></section>
 
-  function erase() {
-    if (charIndex > 0) {
-      if (!cursor.classList.contains("typing")) cursor.classList.add("typing");
-      typedText.textContent = textArray[textIndex].substring(0, charIndex - 1);
-      charIndex--;
-      setTimeout(erase, erasingSpeed);
-    } else {
-      cursor.classList.remove("typing");
-      textIndex++;
-      if (textIndex >= textArray.length) textIndex = 0;
-      setTimeout(type, 1000);
-    }
-  }
+<section class="section" id="process"><div class="container"><div class="reveal"><div class="eyebrow">How We Work</div><h2 class="h2">Simple process. Serious execution.</h2></div><div class="process">
+<article class="step reveal"><div class="stepNo">01</div><h3>Discover</h3><p>Understand the business, users, goals and technical requirements.</p></article>
+<article class="step reveal"><div class="stepNo">02</div><h3>Design</h3><p>Create the visual system, structure and user experience.</p></article>
+<article class="step reveal"><div class="stepNo">03</div><h3>Develop</h3><p>Build the product with clean, maintainable and scalable code.</p></article>
+<article class="step reveal"><div class="stepNo">04</div><h3>Launch & Support</h3><p>Deploy, monitor and support the product after launch.</p></article>
+</div></div></section>
 
-  document.addEventListener("DOMContentLoaded", function() {
-    if (textArray.length) setTimeout(type, 1000);
-  });
-</script>
+<section class="cta" id="contact"><div class="container"><div class="ctabox"><div class="ctain"><div><h2>Let's build something valuable.</h2><p>Have a website, software or digital product idea? Let's discuss it.</p></div><div class="ctaBtns"><a class="btn primary" href="tel:+919673436830"><i class="fa-solid fa-phone"></i> Call Us</a><a class="btn ghost" href="mailto:pawanbisen123@gmail.com"><i class="fa-solid fa-envelope"></i> Email Us</a><a class="btn ghost" href="https://wa.me/919673436830"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></div></div></div></div></section>
+</main>
+
+<footer class="footer"><div class="container"><div class="footerGrid">
+<div><div class="footerLogo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 905"><path d="M 1415,663 L 1415,733 L 1436,733 L 1437,706 L 1477,706 L 1478,733 L 1500,733 L 1500,663 L 1478,663 L 1477,688 L 1437,688 L 1436,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1200,678 L 1194,692 L 1195,708 L 1202,720 L 1212,728 L 1226,733 L 1272,733 L 1285,716 L 1228,715 L 1224,713 L 1215,702 L 1215,695 L 1224,684 L 1236,681 L 1272,681 L 1285,663 L 1224,664 L 1209,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 985,663 L 985,733 L 1053,733 L 1066,715 L 1008,715 L 1007,707 L 1050,706 L 1062,690 L 1008,690 L 1007,682 L 1053,681 L 1066,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 777,663 L 763,681 L 795,681 L 796,733 L 817,733 L 817,682 L 843,681 L 856,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 561,733 L 583,733 L 584,708 L 622,708 L 636,691 L 584,691 L 584,681 L 626,681 L 640,663 L 562,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 107,672 L 104,678 L 104,691 L 107,697 L 112,701 L 124,705 L 171,705 L 175,707 L 176,711 L 173,715 L 115,715 L 102,733 L 177,733 L 186,730 L 194,723 L 197,714 L 197,707 L 195,701 L 185,693 L 177,691 L 128,691 L 125,689 L 125,684 L 132,681 L 181,681 L 194,663 L 130,663 L 118,665 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 329,681 L 326,693 L 326,703 L 329,715 L 337,725 L 355,733 L 383,735 L 409,730 L 416,726 L 424,718 L 427,711 L 429,696 L 424,679 L 414,669 L 401,664 L 389,662 L 365,662 L 353,664 L 339,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 349,688 L 356,682 L 365,680 L 389,680 L 398,682 L 406,690 L 406,707 L 401,713 L 392,716 L 372,717 L 358,715 L 349,708 L 347,702 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 112,392 L 384,393 L 405,397 L 417,404 L 426,415 L 428,422 L 428,435 L 423,445 L 410,456 L 397,461 L 385,463 L 111,463 L 111,618 L 205,618 L 206,538 L 350,538 L 418,618 L 543,618 L 499,570 L 458,529 L 446,520 L 448,518 L 453,518 L 472,511 L 492,498 L 502,488 L 516,466 L 524,440 L 524,405 L 516,379 L 504,360 L 489,346 L 477,338 L 451,326 L 434,321 L 384,314 L 173,314 Z" fill="#FA6400" fill-rule="evenodd"/><path d="M 1142,385 L 1132,406 L 1127,423 L 1123,452 L 1125,499 L 1132,526 L 1145,552 L 1154,564 L 1168,578 L 1193,595 L 1230,610 L 1272,619 L 1316,623 L 1394,622 L 1431,617 L 1453,612 L 1487,600 L 1519,581 L 1542,557 L 1551,543 L 1561,519 L 1566,497 L 1568,455 L 1566,435 L 1561,413 L 1551,389 L 1538,370 L 1522,354 L 1500,339 L 1465,324 L 1422,314 L 1367,309 L 1307,310 L 1258,316 L 1217,327 L 1187,341 L 1164,358 L 1151,372 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1222,428 L 1229,416 L 1238,407 L 1257,397 L 1276,392 L 1321,388 L 1370,388 L 1401,390 L 1427,395 L 1441,400 L 1455,409 L 1461,415 L 1468,427 L 1473,443 L 1474,479 L 1472,493 L 1468,506 L 1461,517 L 1454,524 L 1438,534 L 1422,539 L 1380,544 L 1311,544 L 1269,539 L 1253,534 L 1240,527 L 1229,516 L 1222,504 L 1217,485 L 1217,447 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 556,618 L 649,617 L 683,491 L 695,442 L 695,436 L 698,431 L 777,583 L 792,607 L 804,617 L 815,622 L 848,623 L 863,619 L 878,607 L 891,587 L 941,493 L 972,430 L 984,480 L 1022,618 L 1116,618 L 1036,342 L 1026,326 L 1018,319 L 1005,312 L 992,309 L 979,309 L 961,314 L 949,322 L 937,336 L 859,474 L 837,517 L 835,516 L 825,494 L 792,434 L 731,329 L 722,320 L 714,315 L 694,309 L 676,310 L 658,317 L 646,328 L 636,345 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1452,171 L 1431,188 L 1395,226 L 1371,260 L 1354,292 L 1354,296 L 1376,282 L 1399,273 L 1423,268 L 1444,267 L 1475,271 L 1492,276 L 1511,284 L 1534,299 L 1562,328 L 1578,353 L 1584,368 L 1590,393 L 1592,415 L 1588,455 L 1582,470 L 1582,474 L 1592,467 L 1614,443 L 1629,418 L 1635,403 L 1641,380 L 1643,362 L 1642,336 L 1637,317 L 1638,313 L 1664,341 L 1678,361 L 1692,387 L 1700,407 L 1705,426 L 1711,465 L 1709,511 L 1707,515 L 1705,532 L 1694,564 L 1711,552 L 1737,525 L 1737,523 L 1747,512 L 1765,481 L 1780,440 L 1786,406 L 1786,389 L 1788,388 L 1802,413 L 1816,447 L 1827,491 L 1830,519 L 1831,558 L 1829,562 L 1828,585 L 1825,602 L 1821,613 L 1821,619 L 1809,655 L 1812,655 L 1837,634 L 1855,616 L 1877,588 L 1892,565 L 1914,519 L 1926,477 L 1928,457 L 1930,453 L 1931,383 L 1922,335 L 1914,310 L 1902,282 L 1872,233 L 1849,206 L 1823,182 L 1801,165 L 1779,151 L 1730,129 L 1699,120 L 1671,115 L 1647,113 L 1608,113 L 1573,118 L 1543,125 L 1520,133 L 1490,147 Z" fill="#FA6400" fill-rule="evenodd"/></svg></div><p class="footerText">RMO Softech builds professional digital experiences through technology, design and long-term support.</p></div>
+<div><h4>Company</h4><div class="footerLinks"><a href="#about">About</a><a href="#services">Services</a><a href="#technology">Technology</a><a href="#contact">Contact</a></div></div>
+<div><h4>Services</h4><div class="footerLinks"><a href="#services">Web Development</a><a href="#services">UI / UX</a><a href="#services">E-Commerce</a><a href="#services">Business Software</a></div></div>
+<div><h4>Contact</h4>
+<div class="footerContact">
+<a href="tel:+919673436830"><i class="fa-solid fa-phone"></i><span>+91 96734 36830</span></a>
+<a class="emailHighlight" href="mailto:pawanbisen123@gmail.com"><i class="fa-solid fa-envelope"></i><span>pawanbisen123@gmail.com</span></a>
+<a href="https://wa.me/919673436830"><i class="fa-brands fa-whatsapp"></i><span>Chat on WhatsApp</span></a>
+</div>
+<div class="socials" aria-label="RMO Softech social media">
+<a class="social is-disabled" href="#" data-social="facebook" aria-label="Facebook" title="Add Facebook profile URL"><i class="fa-brands fa-facebook-f"></i></a>
+<a class="social is-disabled" href="#" data-social="instagram" aria-label="Instagram" title="Add Instagram profile URL"><i class="fa-brands fa-instagram"></i></a>
+<a class="social is-disabled" href="#" data-social="linkedin" aria-label="LinkedIn" title="Add LinkedIn profile URL"><i class="fa-brands fa-linkedin-in"></i></a>
+<a class="social" href="mailto:pawanbisen123@gmail.com" aria-label="Email RMO Softech" title="Email RMO Softech"><i class="fa-solid fa-envelope"></i></a>
+<a class="social" href="https://wa.me/919673436830" aria-label="WhatsApp RMO Softech" title="WhatsApp RMO Softech"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+<div class="social-note">Add your official Facebook, Instagram and LinkedIn URLs in the social configuration below.</div>
+</div>
+</div><div class="footerBottom"><span>© 2026 RMO Softech — UDYAM Registered MSME (Govt. of India)</span><span>Digital Solutions • Web • Software • E-Commerce</span></div></div></footer>
+
+<a class="wa" href="https://wa.me/919673436830" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script>
-// ===== Scroll Reveal Animation =====
-window.addEventListener('scroll', reveal);
-
-function reveal() {
-  const reveals = document.querySelectorAll('.reveal');
-
-  for (let i = 0; i < reveals.length; i++) {
-    const windowHeight = window.innerHeight;
-    const revealTop = reveals[i].getBoundingClientRect().top;
-    const revealPoint = 100; // adjust for earlier/later reveal
-
-    if (revealTop < windowHeight - revealPoint) {
-      reveals[i].classList.add('active');
-    } else {
-      reveals[i].classList.remove('active');
-    }
-  }
-}
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>30),{passive:true});
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('menu').addEventListener('click',()=>{
+ let m=document.getElementById('mobileNav');
+ if(m){m.remove();return}
+ m=document.createElement('div');m.id='mobileNav';
+ Object.assign(m.style,{position:'fixed',top:'68px',left:'14px',right:'14px',padding:'12px',background:'#fff',borderRadius:'12px',boxShadow:'0 20px 50px rgba(15,23,42,.12)',zIndex:'49'});
+ m.innerHTML='<a href="#about">About</a><a href="#services">Services</a><a href="#technology">Technology</a><a href="#process">Process</a><a href="#contact">Contact</a>';
+ m.querySelectorAll('a').forEach(a=>Object.assign(a.style,{display:'block',padding:'12px',fontSize:'12px',fontWeight:'600'}));
+ document.body.appendChild(m);m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>m.remove()));
+});
 </script>
-
-
 </body>
-
 </html>
