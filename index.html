@@ -173,13 +173,81 @@ a{text-decoration:none;color:inherit} button{font:inherit}
   .legalLine{font-size:7.5px}
 }
 
+
+/* ===== RMO SOFTECH 2026 - READABILITY + CLIENTS ENHANCEMENT ===== */
+body{font-size:16px;line-height:1.7}
+.hero p{font-size:17px;line-height:1.85}
+.lead{font-size:17px;line-height:1.85}
+.check{font-size:13px;line-height:1.7}
+.service p{font-size:14px;line-height:1.8}
+.step p{font-size:14px;line-height:1.8}
+.cta p{font-size:14px;line-height:1.75}
+.footerText{font-size:12px;line-height:1.8}
+.footerLinks a{font-size:11px}
+.footerContact a{font-size:11px}
+.trustlabel{font-size:10px}
+.trustlist span{font-size:12px}
+.social-note{font-size:9px;line-height:1.6}
+
+.clientsHead{margin-bottom:38px}
+.clientGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.clientCard{
+  min-height:92px;padding:20px 14px;border:1px solid var(--line);border-radius:14px;
+  background:#fff;display:flex;align-items:center;justify-content:center;text-align:center;
+  font:600 14px/1.35 Poppins,sans-serif;color:var(--navy);transition:.3s;
+  position:relative;overflow:hidden;
+}
+.clientCard:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(37,99,235,.06),rgba(6,182,212,.05));opacity:0;transition:.3s}
+.clientCard span{position:relative;z-index:1}
+.clientCard:hover{transform:translateY(-5px);border-color:#c9d8f2;box-shadow:var(--shadow)}
+.clientCard:hover:before{opacity:1}
+
+.ownProject{
+  margin-top:34px;padding:28px;border-radius:18px;
+  background:linear-gradient(135deg,#07182c,#123e78);
+  display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;
+  color:#fff;position:relative;overflow:hidden;
+}
+.ownProject:after{content:"";position:absolute;width:250px;height:250px;right:-100px;top:-120px;border-radius:50%;background:rgba(6,182,212,.16)}
+.ownProjectIcon{
+  width:68px;height:68px;border-radius:16px;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+  font:800 19px Poppins,sans-serif;color:#5ee7ff;position:relative;z-index:1;
+}
+.ownProjectContent{position:relative;z-index:1}
+.ownProjectEyebrow{font-size:10px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#60a5fa}
+.ownProject h3{margin-top:6px;font:700 24px/1.2 Poppins,sans-serif;color:#fff}
+.ownProject p{margin-top:7px;max-width:700px;color:#bcd1ed;font-size:14px;line-height:1.75}
+.ownProjectBadge{
+  position:relative;z-index:1;white-space:nowrap;padding:10px 14px;border-radius:9px;
+  border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);
+  color:#fff;font-size:11px;font-weight:800;
+}
+
+@media(max-width:950px){
+  .clientGrid{grid-template-columns:repeat(3,1fr)}
+  .ownProject{grid-template-columns:auto 1fr}
+  .ownProjectBadge{grid-column:2}
+}
+@media(max-width:600px){
+  .hero p{font-size:15px}
+  .lead{font-size:15px}
+  .service p,.step p{font-size:13px}
+  .clientGrid{grid-template-columns:repeat(2,1fr);gap:11px}
+  .clientCard{min-height:82px;font-size:12px;padding:16px 9px}
+  .ownProject{grid-template-columns:1fr;padding:22px;gap:14px}
+  .ownProjectBadge{grid-column:auto;justify-self:start}
+}
+@media(max-width:380px){.clientGrid{grid-template-columns:1fr}}
+
 </style>
 </head>
 
 <body>
 <header class="nav" id="nav"><div class="container navin">
-<a href="#home" class="logo" aria-label="RMO Softech home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 905"><path d="M 1415,663 L 1415,733 L 1436,733 L 1437,706 L 1477,706 L 1478,733 L 1500,733 L 1500,663 L 1478,663 L 1477,688 L 1437,688 L 1436,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1200,678 L 1194,692 L 1195,708 L 1202,720 L 1212,728 L 1226,733 L 1272,733 L 1285,716 L 1228,715 L 1224,713 L 1215,702 L 1215,695 L 1224,684 L 1236,681 L 1272,681 L 1285,663 L 1224,664 L 1209,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 985,663 L 985,733 L 1053,733 L 1066,715 L 1008,715 L 1007,707 L 1050,706 L 1062,690 L 1008,690 L 1007,682 L 1053,681 L 1066,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 777,663 L 763,681 L 795,681 L 796,733 L 817,733 L 817,682 L 843,681 L 856,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 561,733 L 583,733 L 584,708 L 622,708 L 636,691 L 584,691 L 584,681 L 626,681 L 640,663 L 562,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 107,672 L 104,678 L 104,691 L 107,697 L 112,701 L 124,705 L 171,705 L 175,707 L 176,711 L 173,715 L 115,715 L 102,733 L 177,733 L 186,730 L 194,723 L 197,714 L 197,707 L 195,701 L 185,693 L 177,691 L 128,691 L 125,689 L 125,684 L 132,681 L 181,681 L 194,663 L 130,663 L 118,665 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 329,681 L 326,693 L 326,703 L 329,715 L 337,725 L 355,733 L 383,735 L 409,730 L 416,726 L 424,718 L 427,711 L 429,696 L 424,679 L 414,669 L 401,664 L 389,662 L 365,662 L 353,664 L 339,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 349,688 L 356,682 L 365,680 L 389,680 L 398,682 L 406,690 L 406,707 L 401,713 L 392,716 L 372,717 L 358,715 L 349,708 L 347,702 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 112,392 L 384,393 L 405,397 L 417,404 L 426,415 L 428,422 L 428,435 L 423,445 L 410,456 L 397,461 L 385,463 L 111,463 L 111,618 L 205,618 L 206,538 L 350,538 L 418,618 L 543,618 L 499,570 L 458,529 L 446,520 L 448,518 L 453,518 L 472,511 L 492,498 L 502,488 L 516,466 L 524,440 L 524,405 L 516,379 L 504,360 L 489,346 L 477,338 L 451,326 L 434,321 L 384,314 L 173,314 Z" fill="#FA6400" fill-rule="evenodd"/><path d="M 1142,385 L 1132,406 L 1127,423 L 1123,452 L 1125,499 L 1132,526 L 1145,552 L 1154,564 L 1168,578 L 1193,595 L 1230,610 L 1272,619 L 1316,623 L 1394,622 L 1431,617 L 1453,612 L 1487,600 L 1519,581 L 1542,557 L 1551,543 L 1561,519 L 1566,497 L 1568,455 L 1566,435 L 1561,413 L 1551,389 L 1538,370 L 1522,354 L 1500,339 L 1465,324 L 1422,314 L 1367,309 L 1307,310 L 1258,316 L 1217,327 L 1187,341 L 1164,358 L 1151,372 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1222,428 L 1229,416 L 1238,407 L 1257,397 L 1276,392 L 1321,388 L 1370,388 L 1401,390 L 1427,395 L 1441,400 L 1455,409 L 1461,415 L 1468,427 L 1473,443 L 1474,479 L 1472,493 L 1468,506 L 1461,517 L 1454,524 L 1438,534 L 1422,539 L 1380,544 L 1311,544 L 1269,539 L 1253,534 L 1240,527 L 1229,516 L 1222,504 L 1217,485 L 1217,447 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 556,618 L 649,617 L 683,491 L 695,442 L 695,436 L 698,431 L 777,583 L 792,607 L 804,617 L 815,622 L 848,623 L 863,619 L 878,607 L 891,587 L 941,493 L 972,430 L 984,480 L 1022,618 L 1116,618 L 1036,342 L 1026,326 L 1018,319 L 1005,312 L 992,309 L 979,309 L 961,314 L 949,322 L 937,336 L 859,474 L 837,517 L 835,516 L 825,494 L 792,434 L 731,329 L 722,320 L 714,315 L 694,309 L 676,310 L 658,317 L 646,328 L 636,345 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1452,171 L 1431,188 L 1395,226 L 1371,260 L 1354,292 L 1354,296 L 1376,282 L 1399,273 L 1423,268 L 1444,267 L 1475,271 L 1492,276 L 1511,284 L 1534,299 L 1562,328 L 1578,353 L 1584,368 L 1590,393 L 1592,415 L 1588,455 L 1582,470 L 1582,474 L 1592,467 L 1614,443 L 1629,418 L 1635,403 L 1641,380 L 1643,362 L 1642,336 L 1637,317 L 1638,313 L 1664,341 L 1678,361 L 1692,387 L 1700,407 L 1705,426 L 1711,465 L 1709,511 L 1707,515 L 1705,532 L 1694,564 L 1711,552 L 1737,525 L 1737,523 L 1747,512 L 1765,481 L 1780,440 L 1786,406 L 1786,389 L 1788,388 L 1802,413 L 1816,447 L 1827,491 L 1830,519 L 1831,558 L 1829,562 L 1828,585 L 1825,602 L 1821,613 L 1821,619 L 1809,655 L 1812,655 L 1837,634 L 1855,616 L 1877,588 L 1892,565 L 1914,519 L 1926,477 L 1928,457 L 1930,453 L 1931,383 L 1922,335 L 1914,310 L 1902,282 L 1872,233 L 1849,206 L 1823,182 L 1801,165 L 1779,151 L 1730,129 L 1699,120 L 1671,115 L 1647,113 L 1608,113 L 1573,118 L 1543,125 L 1520,133 L 1490,147 Z" fill="#FA6400" fill-rule="evenodd"/></svg></a>
-<nav class="links" aria-label="Primary navigation"><a href="#about">About</a><a href="#services">Services</a><a href="#technology">Technology</a><a href="#process">Process</a><a href="#contact" class="navcta">Let's Talk</a></nav>
+<a href="#home" class="logo" aria-label="RMO Softech home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 905"><path d="M 1415,663 L 1415,733 L 1436,733 L 1437,706 L 1477,706 L 1478,733 L 1500,733 L 1500,663 L 1478,663 L 1477,688 L 1437,688 L 1436,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1200,678 L 1194,692 L 1195,708 L 1202,720 L 1212,728 L 1226,733 L 1272,733 L 1285,716 L 1228,715 L 1224,713 L 1215,702 L 1215,695 L 1224,684 L 1236,681 L 1272,681 L 1285,663 L 1224,664 L 1209,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 985,663 L 985,733 L 1053,733 L 1066,715 L 1008,715 L 1007,707 L 1050,706 L 1062,690 L 1008,690 L 1007,682 L 1053,681 L 1066,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 777,663 L 763,681 L 795,681 L 796,733 L 817,733 L 817,682 L 843,681 L 856,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 561,733 L 583,733 L 584,708 L 622,708 L 636,691 L 584,691 L 584,681 L 626,681 L 640,663 L 562,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 107,672 L 104,678 L 104,691 L 107,697 L 112,701 L 124,705 L 171,705 L 175,707 L 176,711 L 173,715 L 115,715 L 102,733 L 177,733 L 186,730 L 194,723 L 197,714 L 197,707 L 195,701 L 185,693 L 177,691 L 128,691 L 125,689 L 125,684 L 132,681 L 181,681 L 194,663 L 130,663 L 118,665 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 329,681 L 326,693 L 326,703 L 329,715 L 337,725 L 355,733 L 383,735 L 409,730 L 416,726 L 424,718 L 427,711 L 429,696 L 424,679 L 414,669 L 401,664 L 389,662 L 365,662 L 353,664 L 339,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 349,688 L 356,682 L 365,680 L 389,680 L 398,682 L 406,690 L 406,707 L 401,713 L 392,716 L 372,717 L 358,715 L 349,708 L 347,702 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 112,392 L 384,393 L 405,397 L 417,404 L 426,415 L 428,422 L 428,435 L 423,445 L 410,456 L 397,461 L 385,463 L 111,463 L 111,618 L 205,618 L 206,538 L 350,538 L 418,618 L 543,618 L 499,570 L 458,529 L 446,520 L 448,518 L 453,518 L 472,511 L 492,498 L 502,488 L 516,466 L 524,440 L 524,405 L 516,379 L 504,360 L 489,346 L 477,338 L 451,326 L 434,321 L 384,314 L 173,314 Z" fill="#FA6400" fill-rule="evenodd"/><path d="M 1142,385 L 1132,406 L 1127,423 L 1123,452 L 1125,499 L 1132,526 L 1145,552 L 1154,564 L 1168,578 L 1193,595 L 1230,610 L 1272,619 L 1316,623 L 1394,622 L 1431,617 L 1453,612 L 1487,600 L 1519,581 L 1542,557 L 1551,543 L 1561,519 L 1566,497 L 1568,455 L 1566,435 L 1561,413 L 1551,389 L 1538,370 L 1522,354 L 1500,339 L 1465,324 L 1422,314 L 1367,309 L 1307,310 L 1258,316 L 1217,327 L 1187,341 L 1164,358 L 1151,372 Z" fill="none" stroke="currentColor" stroke-width="22" stroke-linejoin="round"/>
+<path d="M 1222,428 L 1229,416 L 1238,407 L 1257,397 L 1276,392 L 1321,388 L 1370,388 L 1401,390 L 1427,395 L 1441,400 L 1455,409 L 1461,415 L 1468,427 L 1473,443 L 1474,479 L 1472,493 L 1468,506 L 1461,517 L 1454,524 L 1438,534 L 1422,539 L 1380,544 L 1311,544 L 1269,539 L 1253,534 L 1240,527 L 1229,516 L 1222,504 L 1217,485 L 1217,447 Z" fill="none" stroke="currentColor" stroke-width="22" stroke-linejoin="round"/><path d="M 556,618 L 649,617 L 683,491 L 695,442 L 695,436 L 698,431 L 777,583 L 792,607 L 804,617 L 815,622 L 848,623 L 863,619 L 878,607 L 891,587 L 941,493 L 972,430 L 984,480 L 1022,618 L 1116,618 L 1036,342 L 1026,326 L 1018,319 L 1005,312 L 992,309 L 979,309 L 961,314 L 949,322 L 937,336 L 859,474 L 837,517 L 835,516 L 825,494 L 792,434 L 731,329 L 722,320 L 714,315 L 694,309 L 676,310 L 658,317 L 646,328 L 636,345 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1452,171 L 1431,188 L 1395,226 L 1371,260 L 1354,292 L 1354,296 L 1376,282 L 1399,273 L 1423,268 L 1444,267 L 1475,271 L 1492,276 L 1511,284 L 1534,299 L 1562,328 L 1578,353 L 1584,368 L 1590,393 L 1592,415 L 1588,455 L 1582,470 L 1582,474 L 1592,467 L 1614,443 L 1629,418 L 1635,403 L 1641,380 L 1643,362 L 1642,336 L 1637,317 L 1638,313 L 1664,341 L 1678,361 L 1692,387 L 1700,407 L 1705,426 L 1711,465 L 1709,511 L 1707,515 L 1705,532 L 1694,564 L 1711,552 L 1737,525 L 1737,523 L 1747,512 L 1765,481 L 1780,440 L 1786,406 L 1786,389 L 1788,388 L 1802,413 L 1816,447 L 1827,491 L 1830,519 L 1831,558 L 1829,562 L 1828,585 L 1825,602 L 1821,613 L 1821,619 L 1809,655 L 1812,655 L 1837,634 L 1855,616 L 1877,588 L 1892,565 L 1914,519 L 1926,477 L 1928,457 L 1930,453 L 1931,383 L 1922,335 L 1914,310 L 1902,282 L 1872,233 L 1849,206 L 1823,182 L 1801,165 L 1779,151 L 1730,129 L 1699,120 L 1671,115 L 1647,113 L 1608,113 L 1573,118 L 1543,125 L 1520,133 L 1490,147 Z" fill="#FA6400" fill-rule="evenodd"/></svg></a>
+<nav class="links" aria-label="Primary navigation"><a href="#about">About</a><a href="#services">Services</a><a href="#clients">Clients</a><a href="#technology">Technology</a><a href="#process">Process</a><a href="#contact" class="navcta">Let's Talk</a></nav>
 <button class="menu" id="menu" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
 </div></header>
 
@@ -191,7 +259,7 @@ a{text-decoration:none;color:inherit} button{font:inherit}
 <h1>We build digital products that <span>move businesses forward.</span></h1>
 <p>RMO Softech creates professional websites, business software, e-commerce platforms and digital experiences designed around real business goals.</p>
 <div class="actions"><a href="#services" class="btn primary">Explore Services <i class="fa-solid fa-arrow-right"></i></a><a href="#contact" class="btn ghost">Start a Project</a></div>
-<div class="stats"><div class="stat"><strong>10+</strong><span>Years Experience</span></div><div class="stat"><strong>100+</strong><span>Projects Delivered</span></div><div class="stat"><strong>24/7</strong><span>Support</span></div></div>
+<div class="stats"><div class="stat"><strong>2+</strong><span>Years Experience</span></div><div class="stat"><strong>50+</strong><span>Projects Delivered</span></div><div class="stat"><strong>24/7</strong><span>Support</span></div></div>
 </div>
 <div class="heroArt reveal">
 <svg viewBox="0 0 650 520" role="img" aria-label="Abstract software dashboard illustration">
@@ -231,6 +299,39 @@ a{text-decoration:none;color:inherit} button{font:inherit}
 <article class="service reveal"><span class="serviceNo">06</span><div class="serviceIcon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Brand & Digital Design</h3><p>Logos, marketing creatives and digital identity systems designed for consistent branding.</p><a href="#contact">Explore →</a></article>
 </div></div></section>
 
+
+<section class="section soft" id="clients">
+  <div class="container">
+    <div class="clientsHead reveal">
+      <div class="eyebrow">Our Clients</div>
+      <h2 class="h2">Businesses that trust RMO Softech.</h2>
+      <p class="lead">We work with businesses across different industries, creating practical digital solutions, websites and technology experiences.</p>
+    </div>
+
+    <div class="clientGrid">
+      <div class="clientCard reveal"><span>Swagat Lawn</span></div>
+      <div class="clientCard reveal"><span>Utsav Lawn</span></div>
+      <div class="clientCard reveal"><span>Ashirwad Lawn</span></div>
+      <div class="clientCard reveal"><span>KK Lawn</span></div>
+      <div class="clientCard reveal"><span>Haddijod Kendra</span></div>
+      <div class="clientCard reveal"><span>Vishwa Import Export</span></div>
+      <div class="clientCard reveal"><span>Ashay Dental Clinic</span></div>
+      <div class="clientCard reveal"><span>Child Healthcare Hospital</span></div>
+      <div class="clientCard reveal"><span>MK Invitation Cards</span></div>
+    </div>
+
+    <div class="ownProject reveal">
+      <div class="ownProjectIcon">MC</div>
+      <div class="ownProjectContent">
+        <div class="ownProjectEyebrow">Our Own Project</div>
+        <h3>MyClinix</h3>
+        <p>A dedicated clinic management and digital healthcare platform developed by RMO Softech.</p>
+      </div>
+      <div class="ownProjectBadge">Built by RMO Softech</div>
+    </div>
+  </div>
+</section>
+
 <section class="section dark" id="technology"><div class="container techgrid">
 <div class="reveal"><div class="eyebrow" style="color:#60a5fa">Technology</div><h2 class="h2">Modern technology. Built with purpose.</h2><p class="lead">We choose technology according to the business problem, project scale and long-term maintenance needs.</p><div class="pills"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">Bootstrap</span><span class="pill">PHP</span><span class="pill">Laravel</span><span class="pill">Firebase</span><span class="pill">MySQL</span><span class="pill">REST API</span><span class="pill">Cloudflare</span></div></div>
 <div class="reveal"><svg class="techsvg" viewBox="0 0 600 500" role="img" aria-label="RMO technology network vector"><g stroke="#2563eb" stroke-opacity=".4" stroke-width="2"><line x1="300" y1="250" x2="120" y2="120"/><line x1="300" y1="250" x2="480" y2="120"/><line x1="300" y1="250" x2="110" y2="380"/><line x1="300" y1="250" x2="490" y2="380"/><line x1="300" y1="250" x2="300" y2="80"/></g><circle cx="300" cy="250" r="66" fill="#102b59" stroke="#60a5fa" stroke-width="2"/><circle cx="300" cy="250" r="46" fill="#07182c"/><text x="300" y="246" text-anchor="middle" font-family="Poppins" font-size="16" font-weight="700" fill="#fff">RMO</text><text x="300" y="266" text-anchor="middle" font-family="Inter" font-size="8" fill="#60a5fa">DIGITAL CORE</text><g fill="#0d2349" stroke="#2563eb"><circle cx="120" cy="120" r="42"/><circle cx="480" cy="120" r="42"/><circle cx="110" cy="380" r="42"/><circle cx="490" cy="380" r="42"/><circle cx="300" cy="80" r="35"/></g><text x="120" y="124" text-anchor="middle" font-family="Inter" font-size="10" fill="#fff">WEB</text><text x="480" y="124" text-anchor="middle" font-family="Inter" font-size="10" fill="#fff">APP</text><text x="110" y="384" text-anchor="middle" font-family="Inter" font-size="10" fill="#fff">CLOUD</text><text x="490" y="384" text-anchor="middle" font-family="Inter" font-size="10" fill="#fff">DATA</text><text x="300" y="84" text-anchor="middle" font-family="Inter" font-size="9" fill="#fff">API</text></svg></div>
@@ -247,7 +348,8 @@ a{text-decoration:none;color:inherit} button{font:inherit}
 </main>
 
 <footer class="footer"><div class="container"><div class="footerGrid">
-<div><div class="footerLogo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 905"><path d="M 1415,663 L 1415,733 L 1436,733 L 1437,706 L 1477,706 L 1478,733 L 1500,733 L 1500,663 L 1478,663 L 1477,688 L 1437,688 L 1436,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1200,678 L 1194,692 L 1195,708 L 1202,720 L 1212,728 L 1226,733 L 1272,733 L 1285,716 L 1228,715 L 1224,713 L 1215,702 L 1215,695 L 1224,684 L 1236,681 L 1272,681 L 1285,663 L 1224,664 L 1209,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 985,663 L 985,733 L 1053,733 L 1066,715 L 1008,715 L 1007,707 L 1050,706 L 1062,690 L 1008,690 L 1007,682 L 1053,681 L 1066,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 777,663 L 763,681 L 795,681 L 796,733 L 817,733 L 817,682 L 843,681 L 856,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 561,733 L 583,733 L 584,708 L 622,708 L 636,691 L 584,691 L 584,681 L 626,681 L 640,663 L 562,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 107,672 L 104,678 L 104,691 L 107,697 L 112,701 L 124,705 L 171,705 L 175,707 L 176,711 L 173,715 L 115,715 L 102,733 L 177,733 L 186,730 L 194,723 L 197,714 L 197,707 L 195,701 L 185,693 L 177,691 L 128,691 L 125,689 L 125,684 L 132,681 L 181,681 L 194,663 L 130,663 L 118,665 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 329,681 L 326,693 L 326,703 L 329,715 L 337,725 L 355,733 L 383,735 L 409,730 L 416,726 L 424,718 L 427,711 L 429,696 L 424,679 L 414,669 L 401,664 L 389,662 L 365,662 L 353,664 L 339,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 349,688 L 356,682 L 365,680 L 389,680 L 398,682 L 406,690 L 406,707 L 401,713 L 392,716 L 372,717 L 358,715 L 349,708 L 347,702 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 112,392 L 384,393 L 405,397 L 417,404 L 426,415 L 428,422 L 428,435 L 423,445 L 410,456 L 397,461 L 385,463 L 111,463 L 111,618 L 205,618 L 206,538 L 350,538 L 418,618 L 543,618 L 499,570 L 458,529 L 446,520 L 448,518 L 453,518 L 472,511 L 492,498 L 502,488 L 516,466 L 524,440 L 524,405 L 516,379 L 504,360 L 489,346 L 477,338 L 451,326 L 434,321 L 384,314 L 173,314 Z" fill="#FA6400" fill-rule="evenodd"/><path d="M 1142,385 L 1132,406 L 1127,423 L 1123,452 L 1125,499 L 1132,526 L 1145,552 L 1154,564 L 1168,578 L 1193,595 L 1230,610 L 1272,619 L 1316,623 L 1394,622 L 1431,617 L 1453,612 L 1487,600 L 1519,581 L 1542,557 L 1551,543 L 1561,519 L 1566,497 L 1568,455 L 1566,435 L 1561,413 L 1551,389 L 1538,370 L 1522,354 L 1500,339 L 1465,324 L 1422,314 L 1367,309 L 1307,310 L 1258,316 L 1217,327 L 1187,341 L 1164,358 L 1151,372 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1222,428 L 1229,416 L 1238,407 L 1257,397 L 1276,392 L 1321,388 L 1370,388 L 1401,390 L 1427,395 L 1441,400 L 1455,409 L 1461,415 L 1468,427 L 1473,443 L 1474,479 L 1472,493 L 1468,506 L 1461,517 L 1454,524 L 1438,534 L 1422,539 L 1380,544 L 1311,544 L 1269,539 L 1253,534 L 1240,527 L 1229,516 L 1222,504 L 1217,485 L 1217,447 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 556,618 L 649,617 L 683,491 L 695,442 L 695,436 L 698,431 L 777,583 L 792,607 L 804,617 L 815,622 L 848,623 L 863,619 L 878,607 L 891,587 L 941,493 L 972,430 L 984,480 L 1022,618 L 1116,618 L 1036,342 L 1026,326 L 1018,319 L 1005,312 L 992,309 L 979,309 L 961,314 L 949,322 L 937,336 L 859,474 L 837,517 L 835,516 L 825,494 L 792,434 L 731,329 L 722,320 L 714,315 L 694,309 L 676,310 L 658,317 L 646,328 L 636,345 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1452,171 L 1431,188 L 1395,226 L 1371,260 L 1354,292 L 1354,296 L 1376,282 L 1399,273 L 1423,268 L 1444,267 L 1475,271 L 1492,276 L 1511,284 L 1534,299 L 1562,328 L 1578,353 L 1584,368 L 1590,393 L 1592,415 L 1588,455 L 1582,470 L 1582,474 L 1592,467 L 1614,443 L 1629,418 L 1635,403 L 1641,380 L 1643,362 L 1642,336 L 1637,317 L 1638,313 L 1664,341 L 1678,361 L 1692,387 L 1700,407 L 1705,426 L 1711,465 L 1709,511 L 1707,515 L 1705,532 L 1694,564 L 1711,552 L 1737,525 L 1737,523 L 1747,512 L 1765,481 L 1780,440 L 1786,406 L 1786,389 L 1788,388 L 1802,413 L 1816,447 L 1827,491 L 1830,519 L 1831,558 L 1829,562 L 1828,585 L 1825,602 L 1821,613 L 1821,619 L 1809,655 L 1812,655 L 1837,634 L 1855,616 L 1877,588 L 1892,565 L 1914,519 L 1926,477 L 1928,457 L 1930,453 L 1931,383 L 1922,335 L 1914,310 L 1902,282 L 1872,233 L 1849,206 L 1823,182 L 1801,165 L 1779,151 L 1730,129 L 1699,120 L 1671,115 L 1647,113 L 1608,113 L 1573,118 L 1543,125 L 1520,133 L 1490,147 Z" fill="#FA6400" fill-rule="evenodd"/></svg></div><p class="footerText">RMO Softech builds professional digital experiences through technology, design and long-term support.</p></div>
+<div><div class="footerLogo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 905"><path d="M 1415,663 L 1415,733 L 1436,733 L 1437,706 L 1477,706 L 1478,733 L 1500,733 L 1500,663 L 1478,663 L 1477,688 L 1437,688 L 1436,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1200,678 L 1194,692 L 1195,708 L 1202,720 L 1212,728 L 1226,733 L 1272,733 L 1285,716 L 1228,715 L 1224,713 L 1215,702 L 1215,695 L 1224,684 L 1236,681 L 1272,681 L 1285,663 L 1224,664 L 1209,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 985,663 L 985,733 L 1053,733 L 1066,715 L 1008,715 L 1007,707 L 1050,706 L 1062,690 L 1008,690 L 1007,682 L 1053,681 L 1066,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 777,663 L 763,681 L 795,681 L 796,733 L 817,733 L 817,682 L 843,681 L 856,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 561,733 L 583,733 L 584,708 L 622,708 L 636,691 L 584,691 L 584,681 L 626,681 L 640,663 L 562,663 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 107,672 L 104,678 L 104,691 L 107,697 L 112,701 L 124,705 L 171,705 L 175,707 L 176,711 L 173,715 L 115,715 L 102,733 L 177,733 L 186,730 L 194,723 L 197,714 L 197,707 L 195,701 L 185,693 L 177,691 L 128,691 L 125,689 L 125,684 L 132,681 L 181,681 L 194,663 L 130,663 L 118,665 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 329,681 L 326,693 L 326,703 L 329,715 L 337,725 L 355,733 L 383,735 L 409,730 L 416,726 L 424,718 L 427,711 L 429,696 L 424,679 L 414,669 L 401,664 L 389,662 L 365,662 L 353,664 L 339,670 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 349,688 L 356,682 L 365,680 L 389,680 L 398,682 L 406,690 L 406,707 L 401,713 L 392,716 L 372,717 L 358,715 L 349,708 L 347,702 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 112,392 L 384,393 L 405,397 L 417,404 L 426,415 L 428,422 L 428,435 L 423,445 L 410,456 L 397,461 L 385,463 L 111,463 L 111,618 L 205,618 L 206,538 L 350,538 L 418,618 L 543,618 L 499,570 L 458,529 L 446,520 L 448,518 L 453,518 L 472,511 L 492,498 L 502,488 L 516,466 L 524,440 L 524,405 L 516,379 L 504,360 L 489,346 L 477,338 L 451,326 L 434,321 L 384,314 L 173,314 Z" fill="#FA6400" fill-rule="evenodd"/><path d="M 1142,385 L 1132,406 L 1127,423 L 1123,452 L 1125,499 L 1132,526 L 1145,552 L 1154,564 L 1168,578 L 1193,595 L 1230,610 L 1272,619 L 1316,623 L 1394,622 L 1431,617 L 1453,612 L 1487,600 L 1519,581 L 1542,557 L 1551,543 L 1561,519 L 1566,497 L 1568,455 L 1566,435 L 1561,413 L 1551,389 L 1538,370 L 1522,354 L 1500,339 L 1465,324 L 1422,314 L 1367,309 L 1307,310 L 1258,316 L 1217,327 L 1187,341 L 1164,358 L 1151,372 Z" fill="none" stroke="currentColor" stroke-width="22" stroke-linejoin="round"/>
+<path d="M 1222,428 L 1229,416 L 1238,407 L 1257,397 L 1276,392 L 1321,388 L 1370,388 L 1401,390 L 1427,395 L 1441,400 L 1455,409 L 1461,415 L 1468,427 L 1473,443 L 1474,479 L 1472,493 L 1468,506 L 1461,517 L 1454,524 L 1438,534 L 1422,539 L 1380,544 L 1311,544 L 1269,539 L 1253,534 L 1240,527 L 1229,516 L 1222,504 L 1217,485 L 1217,447 Z" fill="none" stroke="currentColor" stroke-width="22" stroke-linejoin="round"/><path d="M 556,618 L 649,617 L 683,491 L 695,442 L 695,436 L 698,431 L 777,583 L 792,607 L 804,617 L 815,622 L 848,623 L 863,619 L 878,607 L 891,587 L 941,493 L 972,430 L 984,480 L 1022,618 L 1116,618 L 1036,342 L 1026,326 L 1018,319 L 1005,312 L 992,309 L 979,309 L 961,314 L 949,322 L 937,336 L 859,474 L 837,517 L 835,516 L 825,494 L 792,434 L 731,329 L 722,320 L 714,315 L 694,309 L 676,310 L 658,317 L 646,328 L 636,345 Z" fill="currentColor" fill-rule="evenodd"/><path d="M 1452,171 L 1431,188 L 1395,226 L 1371,260 L 1354,292 L 1354,296 L 1376,282 L 1399,273 L 1423,268 L 1444,267 L 1475,271 L 1492,276 L 1511,284 L 1534,299 L 1562,328 L 1578,353 L 1584,368 L 1590,393 L 1592,415 L 1588,455 L 1582,470 L 1582,474 L 1592,467 L 1614,443 L 1629,418 L 1635,403 L 1641,380 L 1643,362 L 1642,336 L 1637,317 L 1638,313 L 1664,341 L 1678,361 L 1692,387 L 1700,407 L 1705,426 L 1711,465 L 1709,511 L 1707,515 L 1705,532 L 1694,564 L 1711,552 L 1737,525 L 1737,523 L 1747,512 L 1765,481 L 1780,440 L 1786,406 L 1786,389 L 1788,388 L 1802,413 L 1816,447 L 1827,491 L 1830,519 L 1831,558 L 1829,562 L 1828,585 L 1825,602 L 1821,613 L 1821,619 L 1809,655 L 1812,655 L 1837,634 L 1855,616 L 1877,588 L 1892,565 L 1914,519 L 1926,477 L 1928,457 L 1930,453 L 1931,383 L 1922,335 L 1914,310 L 1902,282 L 1872,233 L 1849,206 L 1823,182 L 1801,165 L 1779,151 L 1730,129 L 1699,120 L 1671,115 L 1647,113 L 1608,113 L 1573,118 L 1543,125 L 1520,133 L 1490,147 Z" fill="#FA6400" fill-rule="evenodd"/></svg></div><p class="footerText">RMO Softech builds professional digital experiences through technology, design and long-term support.</p></div>
 <div><h4>Company</h4><div class="footerLinks"><a href="#about">About</a><a href="#services">Services</a><a href="#technology">Technology</a><a href="#contact">Contact</a></div></div>
 <div><h4>Services</h4><div class="footerLinks"><a href="#services">Web Development</a><a href="#services">UI / UX</a><a href="#services">E-Commerce</a><a href="#services">Business Software</a></div></div>
 <div><h4>Contact</h4>
@@ -279,7 +381,7 @@ document.getElementById('menu').addEventListener('click',()=>{
  if(m){m.remove();return}
  m=document.createElement('div');m.id='mobileNav';
  Object.assign(m.style,{position:'fixed',top:'68px',left:'14px',right:'14px',padding:'12px',background:'#fff',borderRadius:'12px',boxShadow:'0 20px 50px rgba(15,23,42,.12)',zIndex:'49'});
- m.innerHTML='<a href="#about">About</a><a href="#services">Services</a><a href="#technology">Technology</a><a href="#process">Process</a><a href="#contact">Contact</a>';
+ m.innerHTML='<a href="#about">About</a><a href="#services">Services</a><a href="#clients">Clients</a><a href="#technology">Technology</a><a href="#process">Process</a><a href="#contact">Contact</a>';
  m.querySelectorAll('a').forEach(a=>Object.assign(a.style,{display:'block',padding:'12px',fontSize:'12px',fontWeight:'600'}));
  document.body.appendChild(m);m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>m.remove()));
 });
