@@ -68,6 +68,268 @@
       </div>
     </section>
 
+
+    <!-- Event Countdown Section -->
+    <section class="event-countdown reveal" id="eventCountdown">
+        <style>
+            .event-countdown {
+                position: relative;
+                overflow: hidden;
+                padding: 48px 20px;
+                margin: 0 auto 28px;
+                text-align: center;
+                color: #fff5df;
+                background:
+                    radial-gradient(ellipse at top, rgba(199,151,69,.17), transparent 65%),
+                    linear-gradient(145deg, #260b12, #521824 55%, #310d17);
+                border: 1px solid rgba(218,178,104,.38);
+                border-radius: 22px;
+                box-shadow: 0 14px 38px rgba(50,10,20,.16);
+            }
+
+            .event-countdown::before,
+            .event-countdown::after {
+                content: "✦";
+                position: absolute;
+                color: #e6c17b;
+                opacity: .55;
+                font-size: 26px;
+                pointer-events: none;
+            }
+
+            .event-countdown::before {
+                top: 20px;
+                left: 22px;
+            }
+
+            .event-countdown::after {
+                right: 22px;
+                bottom: 20px;
+            }
+
+            .event-countdown .countdown-kicker {
+                color: #e9c783;
+                font-size: 12px;
+                letter-spacing: 2px;
+                margin-bottom: 12px;
+            }
+
+            .event-countdown h2 {
+                margin: 0 0 10px;
+                color: #fff1d2;
+                font-size: clamp(23px, 4vw, 34px);
+                line-height: 1.4;
+                font-weight: 700;
+            }
+
+            .event-countdown .countdown-subtitle {
+                color: #f0d9c0;
+                font-size: 14px;
+                margin-bottom: 27px;
+            }
+
+            .event-countdown .countdown-grid {
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 12px;
+                max-width: 510px;
+                margin: 0 auto 23px;
+            }
+
+            .event-countdown .countdown-box {
+                min-width: 0;
+                padding: 19px 5px 15px;
+                border: 1px solid rgba(231,194,125,.48);
+                border-radius: 14px;
+                background: linear-gradient(
+                    155deg,
+                    rgba(255,244,215,.12),
+                    rgba(255,255,255,.035)
+                );
+                box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+            }
+
+            .event-countdown .countdown-number {
+                display: block;
+                color: #ffda91;
+                font-size: clamp(27px, 5vw, 42px);
+                font-weight: 700;
+                line-height: 1.15;
+                font-variant-numeric: tabular-nums;
+            }
+
+            .event-countdown .countdown-label {
+                display: block;
+                color: #f5e4cc;
+                font-size: 12px;
+                margin-top: 9px;
+            }
+
+            .event-countdown .countdown-footer {
+                color: #eacb98;
+                font-size: 13px;
+                margin: 0;
+            }
+
+            .event-countdown .countdown-divider {
+                width: 65px;
+                height: 1px;
+                margin: 0 auto 17px;
+                background: linear-gradient(
+                    90deg,
+                    transparent,
+                    #dfb86c,
+                    transparent
+                );
+            }
+
+            @media (max-width: 480px) {
+                .event-countdown {
+                    padding: 35px 13px;
+                    border-radius: 17px;
+                }
+
+                .event-countdown .countdown-grid {
+                    gap: 7px;
+                    margin-bottom: 19px;
+                }
+
+                .event-countdown .countdown-box {
+                    padding: 16px 2px 13px;
+                    border-radius: 10px;
+                }
+
+                .event-countdown .countdown-label {
+                    font-size: 11px;
+                }
+
+                .event-countdown .countdown-subtitle {
+                    font-size: 13px;
+                    margin-bottom: 22px;
+                }
+            }
+
+            @media (prefers-reduced-motion: no-preference) {
+                .event-countdown .countdown-box {
+                    animation: countdownGlow 3s ease-in-out infinite alternate;
+                }
+
+                .event-countdown .countdown-box:nth-child(2) {
+                    animation-delay: .3s;
+                }
+
+                .event-countdown .countdown-box:nth-child(3) {
+                    animation-delay: .6s;
+                }
+
+                .event-countdown .countdown-box:nth-child(4) {
+                    animation-delay: .9s;
+                }
+
+                @keyframes countdownGlow {
+                    from { border-color: rgba(231,194,125,.3); }
+                    to   { border-color: rgba(231,194,125,.75); }
+                }
+            }
+        </style>
+
+        <div class="countdown-kicker">॥ मंगल सोहळ्याची आतुरता ॥</div>
+
+        <h2>आता उरले आहेत फक्त...</h2>
+
+        <div class="countdown-subtitle">
+            आपल्या भेटीच्या सुंदर क्षणांची उलटगणती
+        </div>
+
+        <div class="countdown-grid" aria-label="सोहळा सुरू होण्यासाठी उरलेला वेळ">
+            <div class="countdown-box">
+                <span class="countdown-number" id="cdDays">00</span>
+                <span class="countdown-label">दिवस</span>
+            </div>
+
+            <div class="countdown-box">
+                <span class="countdown-number" id="cdHours">00</span>
+                <span class="countdown-label">तास</span>
+            </div>
+
+            <div class="countdown-box">
+                <span class="countdown-number" id="cdMinutes">00</span>
+                <span class="countdown-label">मिनिटे</span>
+            </div>
+
+            <div class="countdown-box">
+                <span class="countdown-number" id="cdSeconds">00</span>
+                <span class="countdown-label">सेकंद</span>
+            </div>
+        </div>
+
+        <div class="countdown-divider"></div>
+
+        <p class="countdown-footer" id="cdMessage">
+            १८ ऑक्टोबर २०२६ · रविवार · दुपारी ३:०० वाजता
+        </p>
+
+        <script>
+            (function () {
+                const targetDate = new Date(
+                    '2026-10-18T15:00:00+05:30'
+                ).getTime();
+
+                const daysEl = document.getElementById('cdDays');
+                const hoursEl = document.getElementById('cdHours');
+                const minutesEl = document.getElementById('cdMinutes');
+                const secondsEl = document.getElementById('cdSeconds');
+                const messageEl = document.getElementById('cdMessage');
+
+                if (
+                    !daysEl || !hoursEl || !minutesEl ||
+                    !secondsEl || !messageEl
+                ) return;
+
+                function updateCountdown() {
+                    const remaining = targetDate - Date.now();
+
+                    if (remaining <= 0) {
+                        daysEl.textContent = '00';
+                        hoursEl.textContent = '00';
+                        minutesEl.textContent = '00';
+                        secondsEl.textContent = '00';
+                        messageEl.textContent =
+                            'आपल्या आगमनाने सोहळ्याची शोभा वाढवा!';
+                        clearInterval(timer);
+                        return;
+                    }
+
+                    const days = Math.floor(
+                        remaining / (1000 * 60 * 60 * 24)
+                    );
+
+                    const hours = Math.floor(
+                        (remaining / (1000 * 60 * 60)) % 24
+                    );
+
+                    const minutes = Math.floor(
+                        (remaining / (1000 * 60)) % 60
+                    );
+
+                    const seconds = Math.floor(
+                        (remaining / 1000) % 60
+                    );
+
+                    daysEl.textContent = String(days).padStart(2, '0');
+                    hoursEl.textContent = String(hours).padStart(2, '0');
+                    minutesEl.textContent = String(minutes).padStart(2, '0');
+                    secondsEl.textContent = String(seconds).padStart(2, '0');
+                }
+
+                updateCountdown();
+                const timer = setInterval(updateCountdown, 1000);
+            })();
+        </script>
+    </section>
+    <!-- End Event Countdown Section -->
+
+
     <section class="section details reveal" id="details">
       <div class="section-kicker">॥ दिनांक लक्षात ठेवा ॥</div>
       <h2>सोहळ्याची <em>रूपरेषा</em></h2>
