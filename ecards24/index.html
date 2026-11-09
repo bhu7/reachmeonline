@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>eCards24 — Invitations made unforgettable</title>
+        <meta name="description" content="Explore premium digital invitations for every celebration." />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="top">✦ Beautiful moments deserve beautiful invitations ✦</div>
+        <header class="nav">
+            <div class="wrap navinner">
+                <a class="logo" href="#home">eCards<b>24</b><span style="color: #b88fa6">.</span></a>
+                <nav class="links" id="navlinks">
+                    <a href="#home">Home</a><a href="#about">About</a><a href="#gallery">Explore Themes</a
+                    ><a href="#contact">Contact Us</a><a href="#custom">Custom Design</a>
+                </nav>
+                <a class="btn primary" href="#custom">Get Custom Design ↗</a
+                ><button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+            </div>
+        </header>
+        <main>
+            <section class="hero" id="home">
+                <div class="wrap heroinner">
+                    <div>
+                        <div class="eyebrow">✧ The art of inviting ✧</div>
+                        <h1>Every celebration<br />begins with a <em>beautiful</em> invitation.</h1>
+                        <p>
+                            Explore thoughtfully crafted digital invitation themes for weddings, birthdays, baby showers
+                            and all the moments worth celebrating.
+                        </p>
+                        <div class="heroactions">
+                            <a class="btn primary" href="#categories">Explore Invitations ↗</a
+                            ><a class="btn outline" href="#custom">Create Custom Design</a>
+                        </div>
+                    </div>
+                    <div class="heroart">
+                        <img
+                            src="https://images.unsplash.com/photo-1519741497674-611481863552?w=900&q=85"
+                            alt="Elegant wedding celebration"
+                        />
+                        <div class="floating f1">✦ Premium Designs</div>
+                        <div class="floating f2">♡ Made for your moments</div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="categories">
+                <div class="wrap">
+                    <div class="sectionhead">
+                        <div class="eyebrow">Find your occasion</div>
+                        <h2>Celebrate every chapter</h2>
+                        <p>Choose a category to discover invitation designs made just for you.</p>
+                    </div>
+                    <div class="categories" id="categoryList"></div>
+                </div>
+            </section>
+            <section class="section gallerysection" id="gallery">
+                <div class="wrap">
+                    <div class="eyebrow">Our collection</div>
+                    <div class="toolbar">
+                        <div>
+                            <h2 id="galleryTitle">Wedding Invitations</h2>
+                            <p id="count"></p>
+                        </div>
+                        <label class="search"
+                            ><span>⌕</span
+                            ><input
+                                id="search"
+                                type="search"
+                                placeholder="Search themes, styles or ID..."
+                                aria-label="Search themes"
+                        /></label>
+                    </div>
+                    <div class="cards" id="cards"></div>
+                </div>
+            </section>
+            <section class="section feature" id="custom">
+                <div class="wrap split">
+                    <div>
+                        <div class="eyebrow">Designed just for you</div>
+                        <h2>Your vision.<br />Our creativity.</h2>
+                        <p>
+                            Have a special idea? Tell us about your celebration, preferred style and colors. Our custom
+                            design team will help bring your invitation to life.
+                        </p>
+                        <div class="points">
+                            <div class="point"><i>✦</i> Unique personalized invitation designs</div>
+                            <div class="point"><i>♡</i> Premium creative layouts</div>
+                            <div class="point"><i>↗</i> Easy WhatsApp consultation</div>
+                        </div>
+                    </div>
+                    <form class="formcard" id="customForm">
+                        <h3>Let's create something special</h3>
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Your Name *</label
+                                ><input id="name" required placeholder="Full name" />
+                            </div>
+                            <div class="field">
+                                <label for="phone">Phone Number *</label
+                                ><input
+                                    id="phone"
+                                    required
+                                    type="tel"
+                                    pattern="[0-9+() -]{10,18}"
+                                    placeholder="Your phone number"
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="event">Event Type *</label
+                                ><select id="event" required>
+                                    <option value="">Select event</option>
+                                    <option>Wedding</option>
+                                    <option>Birthday</option>
+                                    <option>Baby Shower</option>
+                                    <option>Housewarming</option>
+                                    <option>Anniversary</option>
+                                    <option>Engagement</option>
+                                </select>
+                            </div>
+                            <div class="field"><label for="date">Event Date</label><input id="date" type="date" /></div>
+                            <div class="field full">
+                                <label for="message">Tell us your idea *</label
+                                ><textarea
+                                    id="message"
+                                    required
+                                    placeholder="Theme, colors, language, animation preferences..."
+                                ></textarea>
+                            </div>
+                        </div>
+                        <button class="btn primary" type="submit">Send Enquiry on WhatsApp ↗</button>
+                        <p class="notice">
+                            Your WhatsApp app will open with a pre-filled enquiry. Nothing is submitted to a server.
+                        </p>
+                    </form>
+                </div>
+            </section>
+            <section class="section about" id="about">
+                <div class="wrap aboutbox">
+                    <div class="eyebrow">About eCards24</div>
+                    <h2 style="font-family: &quot;Playfair Display&quot;, serif; color: var(--ink); font-size: 37px">
+                        Thoughtful designs for timeless memories.
+                    </h2>
+                    <p>
+                        At eCards24, we believe the first impression of every celebration starts with an invitation.
+                        Discover stylish digital invitation concepts, preview your favorites, and get in touch to make
+                        your special day truly yours.
+                    </p>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <div class="wrap contactinner">
+                    <div>
+                        <h2 style="font-family: &quot;Playfair Display&quot;, serif; font-size: 32px; margin: 0">
+                            Let's make your celebration unforgettable.
+                        </h2>
+                        <p>Questions, custom ideas or a theme you love? Reach out to our team.</p>
+                    </div>
+                    <a class="btn primary" href="#custom">Contact for Custom Design ↗</a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="wrap">
+                <span>© <span id="year"></span> eCards24. All rights reserved.</span
+                ><span>Crafted with ♡ for every celebration</span>
+            </div>
+        </footer>
+        <script>
+            /* CONFIGURATION: Replace with your business WhatsApp number including country code, without +. */
+            const WHATSAPP_NUMBER = "919673436830";
+            /* Wedding theme links point to /ecards24/theme/<folder>/ . Each folder must contain index.html. */
+            const categories = [
+                ["Wedding", "💍"],
+                ["Birthday", "🎂"],
+                ["Baby Shower", "🧸"],
+                ["Housewarming", "🏡"],
+                ["Anniversary", "🥂"],
+                ["Engagement", "💐"],
+            ];
+            const photos = {
+                wedding: [
+                    "photo-1519741497674-611481863552",
+                    "photo-1537633552985-df8429e8048b",
+                    "photo-1511285560929-80b456fea0bc",
+                    "photo-1523438885200-e635ba2c371e",
+                ],
+                birthday: ["photo-1464366400600-7168b8af9bc3", "photo-1530103862676-de8c9debad1d"],
+                baby: ["photo-1515488042361-ee00e0ddd4e4", "photo-1491013516836-7db643ee125a"],
+                house: ["photo-1600596542815-ffad4c1539a9", "photo-1600607687939-ce8a6c25118c"],
+                anniversary: ["photo-1511795409834-ef04bbd61622", "photo-1529636798458-92182e662485"],
+                engagement: ["photo-1522673607200-164d1b6ce486", "photo-1519225421980-715cb0215aed"],
+            };
+            const data = [
+                ["EC-W001", "Marathi Wedding 1", "Wedding", "Marathi, Traditional", "a1.png", "Marathi-wedding1"],
+                ["EC-W002", "Marathi Wedding 2", "Wedding", "Marathi, Traditional", "a2.png", "Marathi-wedding2"],
+                ["EC-W003", "Marathi Wedding 3", "Wedding", "Marathi, Traditional", "a3.png", "Marathi-wedding3"],
+                ["EC-W004", "Marathi Wedding 4", "Wedding", "Marathi, Traditional", "a4.png", "Marathi-wedding4"],
+                ["EC-W005", "Royal Buddhist Wedding 1", "Wedding", "Buddhist, Royal", "a5.png", "Royal-Buddhist-wedding1"],
+                ["EC-W006", "Royal Buddhist Wedding 2", "Wedding", "Buddhist, Royal", "a6.png", "Royal-Buddhist-wedding2"],
+                ["EC-W007", "Royal Buddhist Wedding 3", "Wedding", "Buddhist, Royal", "a7.png", "Royal-Buddhist-wedding3"],
+                ["EC-W008", "Royal Buddhist Wedding 4", "Wedding", "Buddhist, Royal", "a8.png", "Royal-Buddhist-wedding4"],
+                ["EC-W009", "Royal Buddhist Wedding 5", "Wedding", "Buddhist, Royal", "a9.png", "Royal-Buddhist-wedding5"],
+                ["EC-W010", "Royal Muslim Wedding 1", "Wedding", "Muslim, Royal", "a10.png", "Royal-Muslim-Wedding1"],
+                ["EC-W011", "Royal Muslim Wedding 2", "Wedding", "Muslim, Royal", "a11.png", "Royal-Muslim-Wedding2"],
+                ["EC-W012", "Royal Muslim Wedding 3", "Wedding", "Muslim, Royal", "a12.png", "Royal-Muslim-Wedding3"],
+                ["EC-W013", "Royal Wedding 1", "Wedding", "Royal, Cinematic", "a13.png", "royal-wedding1"],
+                ["EC-W014", "Royal Wedding 2", "Wedding", "Royal, Cinematic", "a14.png", "royal-wedding2"],
+                ["EC-W015", "Royal Wedding 3", "Wedding", "Royal, Cinematic", "a15.png", "royal-wedding3"],
+                ["EC-W016", "Royal Wedding 4", "Wedding", "Royal, Cinematic", "a16.png", "royal-wedding4"],
+                ["EC-W017", "Royal Wedding 5", "Wedding", "Royal, Cinematic", "a17.png", "royal-wedding5"],
+                ["EC-B001", "Golden Birthday", "Birthday", "Elegant, Gold", photos.birthday[0]],
+                ["EC-B002", "Party Sparkle", "Birthday", "Fun, Colorful", photos.birthday[1]],
+                ["EC-S001", "Little Star", "Baby Shower", "Pastel, Cute", photos.baby[0]],
+                ["EC-S002", "Sweet Beginnings", "Baby Shower", "Soft, Floral", photos.baby[1]],
+                ["EC-H001", "New Beginnings", "Housewarming", "Modern, Warm", photos.house[0]],
+                ["EC-H002", "Griha Pravesh", "Housewarming", "Traditional, Home", photos.house[1]],
+                ["EC-A001", "Forever Together", "Anniversary", "Romantic, Classic", photos.anniversary[0]],
+                ["EC-A002", "Golden Years", "Anniversary", "Gold, Elegant", photos.anniversary[1]],
+                ["EC-E001", "Ring Ceremony", "Engagement", "Royal, Romantic", photos.engagement[0]],
+                ["EC-E002", "Blush Engagement", "Engagement", "Floral, Soft", photos.engagement[1]],
+            /*].map(([id, name, category, style, photo, folder]) => ({
+                id, name, category, style, photo,
+                demoUrl: folder ? `./theme/${folder}/` : ""
+            }));*/
+
+            ].map(([id, name, category, style, photo, folder]) => ({
+                id, name, category, style, photo,
+                demoUrl: folder ? `./theme/${folder}/index.html` : ""
+            }));
+
+                
+            let active = "Wedding";
+            const list = document.getElementById("categoryList"),
+                cards = document.getElementById("cards"),
+                search = document.getElementById("search");
+            const escapeHtml = (s) =>
+                String(s).replace(
+                    /[&<>"']/g,
+                    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]
+                );
+            function renderCategories() {
+                list.innerHTML = categories
+                    .map(
+                        ([name, emoji]) =>
+                            `<button class="category ${active === name ? "active" : ""}" data-category="${name}" aria-pressed="${active === name}"><span class="emoji">${emoji}</span><strong>${name}</strong></button>`
+                    )
+                    .join("");
+            }
+            function renderCards() {
+                const q = search.value.toLowerCase().trim();
+                const filtered = data.filter(
+                    (t) => t.category === active && [t.name, t.style, t.id].join(" ").toLowerCase().includes(q)
+                );
+                document.getElementById("galleryTitle").textContent = active + " Invitations";
+                document.getElementById("count").textContent =
+                    `Showing ${filtered.length} ${filtered.length === 1 ? "design" : "designs"}${q ? " matching your search" : ""}`;
+                cards.innerHTML = filtered.length
+                    ? filtered
+                          .map(
+                              (t) =>
+                                  `<article class="theme"><div class="cover"><img loading="lazy" src="${t.category === "Wedding" ? `./boximg/${t.photo}` : `https://images.unsplash.com/${t.photo}?w=600&q=80`}" alt="${escapeHtml(t.name)} preview"><span class="tag">${escapeHtml(t.id)}</span></div><div class="details"><h3>${escapeHtml(t.name)}</h3><small>${escapeHtml(t.style)}</small><div class="actions"><button class="btn primary" data-view="${t.id}">View Theme ↗</button><button class="btn outline" data-share="${t.id}">↗ Share</button></div></div></article>`
+                          )
+                          .join("")
+                    : '<div class="empty">No themes found. Try another keyword.</div>';
+            }
+            list.addEventListener("click", (e) => {
+                const b = e.target.closest("[data-category]");
+                if (!b) return;
+                active = b.dataset.category;
+                search.value = "";
+                renderCategories();
+                renderCards();
+                document.getElementById("gallery").scrollIntoView({ behavior: "smooth" });
+            });
+            search.addEventListener("input", renderCards);
+            function wa(text) {
+                if (!/^\d{10,15}$/.test(WHATSAPP_NUMBER)) {
+                    alert("Please enter a valid WhatsApp number.");
+                    return;
+                }
+
+                const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+
+                window.open(url, "_blank", "noopener,noreferrer");
+            }
+            cards.addEventListener("click", (e) => {
+                const view = e.target.closest("[data-view]"),
+                    share = e.target.closest("[data-share]");
+                if (view) {
+                    const t = data.find((x) => x.id === view.dataset.view);
+                    if (t?.demoUrl) {
+                        window.open(t.demoUrl, "_blank", "noopener,noreferrer");
+                    } else
+                        alert(
+                            `Demo link not connected yet for ${t.name} (${t.id}). Add its URL in the data array's demoUrl field.`
+                        );
+                }
+                if (share) {
+                    const t = data.find((x) => x.id === share.dataset.share);
+                    wa(
+                        `Hello eCards24! 👋\nI like this theme.\n\nTheme: ${t.name}\nTheme ID: ${t.id}${t.demoUrl ? "\nPreview: " + new URL(t.demoUrl, location.href).href : ""}\n\nPlease share more details.`
+                    );
+                }
+            });
+            document.getElementById("customForm").addEventListener("submit", (e) => {
+                e.preventDefault();
+                const val = (id) => document.getElementById(id).value.trim();
+                wa(
+                    `Hello eCards24! I would like a custom invitation design.\n\nName: ${val("name")}\nPhone: ${val("phone")}\nEvent: ${val("event")}\nDate: ${val("date") || "Not decided"}\nRequirements: ${val("message")}`
+                );
+            });
+            document
+                .getElementById("menu")
+                .addEventListener("click", () => document.getElementById("navlinks").classList.toggle("open"));
+            document
+                .querySelectorAll("#navlinks a")
+                .forEach((a) =>
+                    a.addEventListener("click", () => document.getElementById("navlinks").classList.remove("open"))
+                );
+            document.getElementById("year").textContent = new Date().getFullYear();
+            renderCategories();
+            renderCards();
+        </script>
+    </body>
+</html>

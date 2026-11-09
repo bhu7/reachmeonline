@@ -1,0 +1,1 @@
+Open index.html in Chrome. Edit sample Marathi text, dates, maps and RSVP in index.html. Add assets/music/wedding.mp3 for audio. Slide 1 uses original uploaded artwork; slides 2-8 use a clean golden background without the cover title/couple. Swipe or use arrows. No server required. Google Fonts need internet; system Devanagari fallback works offline.
